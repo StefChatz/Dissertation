@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<style type="text/css">
+  .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+  }
+
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="username"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .h3{
+    text-align: center;
+  }
+
+  .blog-posts{
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+  }
+</style>
+
+
+<form class="form-signin" method="post">{% csrf_token %}
+
+  <h1 class="h3 mb-3 font-weight-normal">Account</h1>
+  <br>
+  <h1 class="h5 mb-3 font-weight-normal text-center">Change your Email</h1>
+
+  <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus value={{account_form.initial.email}}>
+
+  <h1 class="h5 mb-3 font-weight-normal text-center">Change your Username</h1>
+
+  <input type="text" name="username" id="inputUsername" class="form-control" placeholder="Username" required
+  value="{{account_form.initial.username}}">
+
+  {% for field in account_form %}
+      <p>
+        {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+        {% endfor %}
+      </p>
+  {% endfor %}
+  {% if account_form.non_field_errors %}
+    <div style="color: red">
+      <p>{{account_form.non_field_errors}}</p>
+    </div>
+
+  {% endif %}
+
+  {% if success_message %}
+    <p style="color:green; text-align: center;">{{success_message}}</p>
+  {% endif  %}
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Save changes</button>
+
+</form>
+
+<div class="d-flex flex-column">
+  <a class="m-auto" href="{% url 'password_change' %}">Change password</a>
+</div>
+
+<!-- <div class="container mt-4 p-4">
+
+  <br>
+  <h1 class="h3 mb-3 font-weight-normal">Preferences</h1>
+
+  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Primary
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="#">Games</a>
+        <a class="dropdown-item" href="#">Social Networking</a>
+        <a class="dropdown-item" href="#">Music</a>
+        <a class="dropdown-item" href="#">Breaking News</a>
+        <a class="dropdown-item" href="#">Finance</a>
+        <a class="dropdown-item" href="#">Movies</a>
+        <a class="dropdown-item" href="#">Sports</a>
+        <a class="dropdown-item" href="#">Travel</a>
+        <a class="dropdown-item" href="#">Automotive</a>
+        <a class="dropdown-item" href="#">Leisure</a>
+      </div>
+    </div>
+
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Secondary
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="#">Games</a>
+        <a class="dropdown-item" href="#">Social Networking</a>
+        <a class="dropdown-item" href="#">Music</a>
+        <a class="dropdown-item" href="#">Breaking News</a>
+        <a class="dropdown-item" href="#">Finance</a>
+        <a class="dropdown-item" href="#">Movies</a>
+        <a class="dropdown-item" href="#">Sports</a>
+        <a class="dropdown-item" href="#">Travel</a>
+        <a class="dropdown-item" href="#">Automotive</a>
+        <a class="dropdown-item" href="#">Leisure</a>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="col-md-4">
+    <div class="form-group">
+    <label>Preferences</label>
+    <select name="gender" class="selectpicker" data-title="Select Gender" data-style="btn-default btn-block" data-menu-style="dropdown-blue">
+    {% for x,y in form.fields.category.choices %}
+       <option value="{{ x }}"{% if form.fields.category.value == x %} selected{% endif %}>{{ y }}</option>
+    {% endfor %}
+    </select>
+  </div>
+</div>
+
+<div class="container mt-4 p-4">
+  <div class="row">
+    <div class="blog-posts">
+      <h3 class="mb-3 font-weight-normal">Blog posts:</h3>
+      {% if blog_posts %}
+        <ul class="list-group">
+        {% for post in blog_posts %}
+          <a href="{% url 'blog:detail' post.slug %}" style="text-decoration: none;"><li class="list-group-item">{{post}}</li></a>
+        {% endfor %}
+        </ul>
+      {% else %}
+        <p>You have no blog posts. Create a post <a href="{% url 'blog:create' %}">here</a>.</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+{% endblock content %}
