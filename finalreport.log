@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.16)  11 MAY 2020 15:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.16)  13 MAY 2020 19:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -293,8 +293,8 @@ LaTeX Info: Redefining \] on input line 2845.
 ))
 (./finalreport.aux (./abstract.aux) (./acknowledgements.aux) (./glossary.aux)
 (./abbrev.aux) (./chapter1.aux) (./chapter2.aux) (./chapter9.aux)
-(./chapter3.aux) (./chapter4.aux) (./chapter5.aux) (./chapter6.aux)
-(./chapter7.aux) (./chapter8.aux))
+(./chapter3.aux) (./chapter4.aux) (./chapter6.aux) (./chapter7.aux)
+(./chapter8.aux))
 \openout1 = `finalreport.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -476,63 +476,77 @@ Chapter 1.
 \openout2 = `chapter2.aux'.
 
  (./chapter2.tex
-<Figures/reddit_rank.png, id=264, 401.5pt x 384.43625pt>
+Chapter 2.
+<Figures/reddit_rank.png, id=259, 401.5pt x 384.43625pt>
 File: Figures/reddit_rank.png Graphic file (type png)
 <use Figures/reddit_rank.png>
-Package pdftex.def Info: Figures/reddit_rank.png  used on input line 7.
+Package pdftex.def Info: Figures/reddit_rank.png  used on input line 10.
 (pdftex.def)             Requested size: 401.49901pt x 384.4353pt.
- [14
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14
 
 
- <./Figures/reddit_rank.png (PNG copy)>]
+
+] [15 <./Figures/reddit_rank.png (PNG copy)>]
 <Figures/hacker_news_rank.png, id=269, 328.22626pt x 74.2775pt>
 File: Figures/hacker_news_rank.png Graphic file (type png)
 <use Figures/hacker_news_rank.png>
-Package pdftex.def Info: Figures/hacker_news_rank.png  used on input line 24.
+Package pdftex.def Info: Figures/hacker_news_rank.png  used on input line 27.
 (pdftex.def)             Requested size: 328.22545pt x 74.27731pt.
-
-[15 <./Figures/hacker_news_rank.png>]) [16]
+) [16 <./Figures/hacker_news_rank.png>] [17]
 \openout2 = `chapter9.aux'.
 
- (./chapter9.tex) [17
+ (./chapter9.tex
+Chapter 3.
+) [18
+
 
 
 ]
 \openout2 = `chapter3.aux'.
 
+ (./chapter3.tex
+Chapter 4.
+) [19
 
-(./chapter3.tex) [18
 
 
 ]
 \openout2 = `chapter4.aux'.
 
- (./chapter4.tex) [19
+ (./chapter4.tex
+Chapter 5.
+) [20
 
-
-]
-\openout2 = `chapter5.aux'.
-
- (./chapter5.tex) [20
 
 
 ]
 \openout2 = `chapter6.aux'.
 
+ (./chapter6.tex
+Chapter 6.
+) [21
 
-(./chapter6.tex) [21
 
 
 ]
 \openout2 = `chapter7.aux'.
 
- (./chapter7.tex) [22
+ (./chapter7.tex
+Chapter 7.
+) [22
+
 
 
 ]
 \openout2 = `chapter8.aux'.
 
- (./chapter8.tex) [23
+ (./chapter8.tex
+Chapter 8.
+) [23
+
 
 
 ]
@@ -541,22 +555,22 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
 (./finalreport.aux (./abstract.aux) (./acknowledgements.aux) (./glossary.aux)
 (./abbrev.aux) (./chapter1.aux) (./chapter2.aux) (./chapter9.aux)
-(./chapter3.aux) (./chapter4.aux) (./chapter5.aux) (./chapter6.aux)
-(./chapter7.aux) (./chapter8.aux))
+(./chapter3.aux) (./chapter4.aux) (./chapter6.aux) (./chapter7.aux)
+(./chapter8.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
 Package rerunfilecheck Info: File `finalreport.out' has not changed.
-(rerunfilecheck)             Checksum: 7FBC64BF81BC68D5AFB947F7C70CEC9C;2422.
+(rerunfilecheck)             Checksum: 636DD7B477E0ACB44DECA1A68A419735;2190.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 55.
  ) 
 Here is how much of TeX's memory you used:
- 6964 strings out of 492616
- 99225 string characters out of 6129481
- 203334 words of memory out of 5000000
- 10633 multiletter control sequences out of 15000+600000
+ 6954 strings out of 492616
+ 98952 string characters out of 6129481
+ 202927 words of memory out of 5000000
+ 10631 multiletter control sequences out of 15000+600000
  15552 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,10n,45p,1392b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,10n,45p,1392b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
 /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
@@ -570,10 +584,10 @@ live/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texli
 ve/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive
 /2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2
 019/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on finalreport.pdf (24 pages, 236365 bytes).
+Output written on finalreport.pdf (24 pages, 240858 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
- 328 compressed objects within 4 object streams
- 74 named destinations out of 1000 (max. 500000)
- 291 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 368 PDF objects out of 1000 (max. 8388607)
+ 323 compressed objects within 4 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 283 words of extra memory for PDF output out of 10000 (max. 10000000)
 

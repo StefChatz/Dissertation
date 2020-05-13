@@ -1,5 +1,8 @@
-\section{Literature Review}
-\subsection {Reddit Rank (Hot Sort)}
+% $Id: chapter2.tex 1790 2010-09-28 16:46:40Z jabriffa $
+
+\chapter{Literature Review}
+
+\section {Reddit Rank (Hot Sort)}
 After conducting my research, it is clear that one of the most popular social news aggregators currently is without a doubt, Reddit. Reddit, although it has now switched to a different ranking algorithm, since the end of 2010 but have since made their old ranking system available to the public. Their algorithm explained in the purest form takes many parameters such as the timestamp of a post, the difference between a post’s upvotes (likes) and downvotes (dislikes) and inputs those parameters in a formula that outputs a final rating that dictates a post’s position compared to others.
 
 \begin{figure}[h]
@@ -16,7 +19,7 @@ After conducting my research, it is clear that one of the most popular social ne
 
 \subsection {Conclusion}
 
-\subsection{Hacker News Rank}
+\section{Hacker News Rank}
 Hacker News is one of the most popular social news aggregator targeted towards developers and provides its users with mostly technology related news. Their ranking consists of three parameters, penalties, votes and age. The most impactful parameter on the formula is the penalty. The penalty's value is determined by the use of blacklisted words such as "NSA" which drops the story rapidly in the ranking. In order to keep the top stories fresh, Hacker News also issues a severe penalty on stories that reach 40 comments. The impact of a penalty can be calculated with the scoring formula since if an article gets penalty factor of 0.4, each vote will now count as 0.3. However, a factor of 0.1 is equivalent to each vote, counting 0.05. Meaning that although a penalty factor of 0.4 would drop an article 66\% faster than usual, a factor of  0.1 would drop an article by 3.6 times than normal. In outline, each item is given a ranking, and the articles are sorted according to the ranking. The simplistic way to think about ranking is the number of votes is divided by time, so more votes results in a higher ranking, but the ranking also drops over time. The votes are raised to a power less than one, while the time is raised to a power greater than one, so time has more effect than votes. Some additional penalties also may be applied to the ranking.
 
 \begin{figure} [h]
