@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.16)  18 MAY 2020 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.16)  18 MAY 2020 15:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -493,12 +493,23 @@ File: Figures/hacker_news_rank.png Graphic file (type png)
 <use Figures/hacker_news_rank.png>
 Package pdftex.def Info: Figures/hacker_news_rank.png  used on input line 33.
 (pdftex.def)             Requested size: 328.22545pt x 74.27731pt.
- [17 <./Figures/hacker_news_rank.png>]) [18]
+ [17 <./Figures/hacker_news_rank.png>]
+<Figures/wilson_confidence.png, id=284, 653.44125pt x 84.315pt>
+File: Figures/wilson_confidence.png Graphic file (type png)
+<use Figures/wilson_confidence.png>
+Package pdftex.def Info: Figures/wilson_confidence.png  used on input line 52.
+(pdftex.def)             Requested size: 653.43965pt x 84.31477pt.
+
+Overfull \hbox (200.47176pt too wide) in paragraph at lines 52--53
+ [][] 
+ []
+
+[18 <./Figures/wilson_confidence.png>]) [19]
 \openout2 = `chapter9.aux'.
 
  (./chapter9.tex
 Chapter 3.
-) [19
+) [20
 
 
 
@@ -507,7 +518,7 @@ Chapter 3.
 
  (./chapter3.tex
 Chapter 4.
-) [20
+) [21
 
 
 
@@ -516,7 +527,7 @@ Chapter 4.
 
  (./chapter4.tex
 Chapter 5.
-) [21
+) [22
 
 
 
@@ -525,7 +536,7 @@ Chapter 5.
 
  (./chapter6.tex
 Chapter 6.
-) [22
+) [23
 
 
 
@@ -534,7 +545,7 @@ Chapter 6.
 
  (./chapter7.tex
 Chapter 7.
-) [23
+) [24
 
 
 
@@ -543,7 +554,7 @@ Chapter 7.
 
  (./chapter8.tex
 Chapter 8.
-) [24
+) [25
 
 
 
@@ -557,35 +568,48 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
 (./chapter8.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
-Package rerunfilecheck Info: File `finalreport.out' has not changed.
-(rerunfilecheck)             Checksum: C17F88427B3C1F966B999B564ED78277;2205.
+
+
+Package rerunfilecheck Warning: File `finalreport.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `finalreport.out':
+(rerunfilecheck)             Before: C17F88427B3C1F966B999B564ED78277;2205
+(rerunfilecheck)             After:  1D9FB2574CF7BCD5704163DCBFEAC4F8;2345.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 55.
  ) 
 Here is how much of TeX's memory you used:
- 6957 strings out of 492616
- 98960 string characters out of 6129481
+ 6968 strings out of 492616
+ 99187 string characters out of 6129481
  202927 words of memory out of 5000000
- 10633 multiletter control sequences out of 15000+600000
+ 10637 multiletter control sequences out of 15000+600000
  15552 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,10n,45p,1392b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
-local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
-ocal/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/loc
-al/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local
-/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/t
-exlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/tex
-live/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texli
-ve/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive
-/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2
-019/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on finalreport.pdf (25 pages, 242877 bytes).
+pdfTeX warning (dest): name{subsection.2.3.4} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.3.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/lo
+cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local
+/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/t
+exlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texli
+ve/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive
+/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2
+019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/201
+9/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
+Output written on finalreport.pdf (26 pages, 259214 bytes).
 PDF statistics:
- 377 PDF objects out of 1000 (max. 8388607)
- 331 compressed objects within 4 object streams
- 74 named destinations out of 1000 (max. 500000)
- 291 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 389 PDF objects out of 1000 (max. 8388607)
+ 340 compressed objects within 4 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 296 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -15,21 +15,23 @@
 \contentsline {section}{\numberline {2.3}Hacker News Rank}{17}{section.2.3}% 
 \contentsline {subsection}{\numberline {2.3.1}Weaknesses}{18}{subsection.2.3.1}% 
 \contentsline {subsection}{\numberline {2.3.2}Conclusion}{18}{subsection.2.3.2}% 
-\contentsline {subsection}{\numberline {2.3.3}Frameworks}{18}{subsection.2.3.3}% 
-\contentsline {subsection}{\numberline {2.3.4}Conclusion}{18}{subsection.2.3.4}% 
-\contentsline {chapter}{\numberline {3}Constructing the Algorithm}{19}{chapter.3}% 
-\contentsline {chapter}{\numberline {4}System Analysis}{20}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Analysis of Existing Systems}{20}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Feasibility and System Limitations}{20}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}User Experience}{20}{section.4.3}% 
-\contentsline {section}{\numberline {4.4}Proposed Solutions}{20}{section.4.4}% 
-\contentsline {section}{\numberline {4.5}Interview \& Survey}{20}{section.4.5}% 
-\contentsline {chapter}{\numberline {5}System Design}{21}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Prototype}{21}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Design Overview}{21}{section.5.2}% 
-\contentsline {section}{\numberline {5.3}User Interface Design and Usability}{21}{section.5.3}% 
-\contentsline {section}{\numberline {5.4}Difficulties faced}{21}{section.5.4}% 
-\contentsline {section}{\numberline {5.5}Main Implementation}{21}{section.5.5}% 
-\contentsline {chapter}{\numberline {6}Testing \& Evaluation}{22}{chapter.6}% 
-\contentsline {chapter}{\numberline {7}Statement of Ethics}{23}{chapter.7}% 
-\contentsline {chapter}{\numberline {8}Conclusion}{24}{chapter.8}% 
+\contentsline {section}{\numberline {2.4}Wilson Confidence Sort}{18}{section.2.4}% 
+\contentsline {section}{\numberline {2.5}Bayesian Average Ratings}{19}{section.2.5}% 
+\contentsline {subsection}{\numberline {2.5.1}Frameworks}{19}{subsection.2.5.1}% 
+\contentsline {subsection}{\numberline {2.5.2}Conclusion}{19}{subsection.2.5.2}% 
+\contentsline {chapter}{\numberline {3}Constructing the Algorithm}{20}{chapter.3}% 
+\contentsline {chapter}{\numberline {4}System Analysis}{21}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Analysis of Existing Systems}{21}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Feasibility and System Limitations}{21}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}User Experience}{21}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}Proposed Solutions}{21}{section.4.4}% 
+\contentsline {section}{\numberline {4.5}Interview \& Survey}{21}{section.4.5}% 
+\contentsline {chapter}{\numberline {5}System Design}{22}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Prototype}{22}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Design Overview}{22}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}User Interface Design and Usability}{22}{section.5.3}% 
+\contentsline {section}{\numberline {5.4}Difficulties faced}{22}{section.5.4}% 
+\contentsline {section}{\numberline {5.5}Main Implementation}{22}{section.5.5}% 
+\contentsline {chapter}{\numberline {6}Testing \& Evaluation}{23}{chapter.6}% 
+\contentsline {chapter}{\numberline {7}Statement of Ethics}{24}{chapter.7}% 
+\contentsline {chapter}{\numberline {8}Conclusion}{25}{chapter.8}% 

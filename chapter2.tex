@@ -44,6 +44,16 @@ Hacker News is one of the most popular social news aggregator targeted towards d
 Overall, Hacker News's algorithm is quite simple, thus making the implementation of something similar not that difficult especially since it takes into account many factors. However, there are drawbacks with using timestamps as addressed above, and a solution to this would be to use time denominated in ticks of actual activity (such as views of the 'new' page, or even upvotes-to-all-submissions) which might address this issue.
 The use of penalty is an interesting concept that would make sense in a user generated content system in which there are no administrators to regulate the content.
 
+\section {Wilson Confidence Sort}
+The problem the Wilson confidence score was designed for developers who need their application's users to sort things. In order to balance the proportion of positive ratings with the uncertainty of a small number of observations. The math to solve this problem was worked out in 1927 by Edwin B. Wilson(Miller, 2009). Considering only positive and negative ratings (i.e. not a 5-star scale), the lower bound on the proportion of positive ratings is given by:
+
+\begin{figure} [!htb]
+  \centering
+	\includegraphics{Figures/wilson_confidence}
+\caption{Edwin B. Wilson confidence sort in mathematical notation}
+\end{figure}
+
+\section {Bayesian Average Ratings}
 \subsection{Frameworks}
 
 \subsection{Conclusion}
