@@ -126,17 +126,7 @@
   </div>
 </div> -->
 
-
-<div class="col-md-4">
-    <div class="form-group">
-    <label>Preferences</label>
-    <select name="gender" class="selectpicker" data-title="Select Gender" data-style="btn-default btn-block" data-menu-style="dropdown-blue">
-    {% for x,y in form.fields.category.choices %}
-       <option value="{{ x }}"{% if form.fields.category.value == x %} selected{% endif %}>{{ y }}</option>
-    {% endfor %}
-    </select>
-  </div>
-</div>
+{{ form.color }}
 
 <div class="container mt-4 p-4">
   <div class="row">

@@ -73,19 +73,26 @@ class Account(AbstractBaseUser):
     # AUTOMOTIVE = 'AUTOMOTIVE'
     # LEISURE = 'LEISURE'
 
+COLOR_CHOICES = (
+	('games', 'GAMES'),
+	('social', 'SOCIAL'),
+	('music', 'MUSIC'),
+	('news', 'NEWS'),
 
-COLOR_CHOICES = [
-	('GAMES', 'Games'),
-	('SOCIAL', 'Social Networking'),
-	('MUSIC', 'Music'),
-	('NEWS', 'Breaking News'),
-	('FINANCE', 'Finance'),
-	('MOVIES', 'Movies'),
-	('SPORTS', 'Sports'),
-	('TRAVEL', 'Travel'),
-	('AUTOMOTIVE', 'Automotive'),
-	('LEISURE', 'Leisure')
-]
+)
+
+# COLOR_CHOICES = (
+# 	('GAMES', 'Games'),
+# 	('SOCIAL', 'Social Networking'),
+# 	('MUSIC', 'Music'),
+# 	('NEWS', 'Breaking News'),
+# 	('FINANCE', 'Finance'),
+# 	('MOVIES', 'Movies'),
+# 	('SPORTS', 'Sports'),
+# 	('TRAVEL', 'Travel'),
+# 	('AUTOMOTIVE', 'Automotive'),
+# 	('LEISURE', 'Leisure')
+# )
 class MyModel(models.Model):
 	color = models.CharField(
 		max_length=20,

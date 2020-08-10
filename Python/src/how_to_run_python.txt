@@ -1,5 +1,6 @@
+~ cd Documents/Projects/Dissertation/Python/src
 ~ virtualenv dissertation -p python 3.7
-got to /python (one back)
+~ cd ..
 ~ source bin/activate
-cd into src
-~ pip manage.py runserver
+~ cd src
+~ python manage.py runserver
