@@ -74,7 +74,7 @@ class AccountUpdateForm(forms.ModelForm):
 # 		super(UserForm, self).__init__(*args, **kargs)
 #
 # category_field = forms.ChoiceField(choices = CATEGORY_CHOICES)
-class MyModelForm(forms.ModelForm):
+class MyModelForm(forms.Form):
     class Meta:
         model = MyModel
         fields = ['color']

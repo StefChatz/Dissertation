@@ -47,6 +47,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_static_jquery3',
+    'django_static_arrive',
+    'django_cascading_dropdown_widget',
 ]
 
 MIDDLEWARE = [
