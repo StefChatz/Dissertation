@@ -68,7 +68,6 @@ def account_view(request):
 			form.initial = {
 					"email": request.POST['email'],
 					"username": request.POST['username'],
-
 			}
 			form.save()
 			context['success_message'] = "Updated"
@@ -83,13 +82,13 @@ def account_view(request):
 		form = AccountCategoryForm(request.POST, instance=request.user)
 		if form.is_valid():
 			choices = form.cleaned_data.get('interests')
-			print(choices)
 			# for choice in choices:
-
+			print(choices)
+			form.save()
 			form.initial = {
 				"interests" : request.POST['interests']
 			}
-			print("test")
+			context['success_message'] = "Updated"
 		else:
 			form = AccountCategoryForm(
 			instance=request.user

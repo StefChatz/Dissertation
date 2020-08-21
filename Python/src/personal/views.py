@@ -17,10 +17,10 @@ def home_screen_view(request, *args, **kwargs):
 		query = request.GET.get('q', '')
 		context['query'] = str(query)
 
-	blog_posts = sorted(get_blog_queryset(request.user, query), key=attrgetter('date_updated'), reverse=True)
-
-
-
+	if request.user.is_authenticated:
+		blog_posts = sorted(get_blog_queryset(request.user, query), key=attrgetter('post_score'), reverse=True)
+	else:
+				blog_posts = sorted(get_blog_queryset(request.user, query), key=attrgetter('date_updated'), reverse=True)
 	# Pagination
 	page = request.GET.get('page', 1)
 	blog_posts_paginator = Paginator(blog_posts, BLOG_POSTS_PER_PAGE)

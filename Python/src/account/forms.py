@@ -38,13 +38,19 @@ class AccountCategoryForm(forms.ModelForm):
 		model = Account
 		fields = ('interests',)
 
-
 class AccountUpdateForm(forms.ModelForm):
 
 	class Meta:
 		model = Account
 		fields = ('email', 'username', 'interests',)
 
+
+	def save(self, commit=True):
+		account = self.instance
+		account.interests = self.cleaned_data['interests']
+	def clean_interests(self):
+		if self.is_valid():
+			interests = self.cleaned_data['interests']
 
 	def clean_email(self):
 		if self.is_valid():

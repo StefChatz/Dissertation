@@ -73,8 +73,15 @@
   {% if success_message %}
     <p style="color:green; text-align: center;">{{success_message}}</p>
   {% endif  %}
+  <div class="list-unstyled">
+    {% for choice in choices_form.interests %}
+    <ul class="list-unstyled">
+      <li class="list-unstyled">{{choice}}</li>
+    </ul>
+    {% endfor %}
+  </div>
 
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Save changes</button>
+  <button class="btn btn-lg btn-primary btn-block" name="save_changes" type="submit">Save changes</button>
 
 </form>
 
@@ -82,13 +89,13 @@
   <a class="m-auto" href="{% url 'password_change' %}">Change password</a>
 </div>
 
-<div class="container mt-4 p-4 text-center justify-content-center">
+<!-- <div class="container mt-4 p-4 text-center justify-content-center">
   <label class="h5 mb-3 font-weight-normal">Change Primary Interest</label>
   <form class="form-check-label text-left" method='post'>{% csrf_token %}
       {{ choices_form.interests }}
       <button class="btn btn-lg btn-primary btn-block" type="submit" value="submit">Update</button>
   </form>
-</div>
+</div> -->
 
 <div class="container mt-4 p-4">
   <div class="row">

@@ -41,6 +41,7 @@ def detail_blog_view(request, slug):
 def edit_blog_view(request, slug):
 
 	context = {}
+
 	user = request.user
 	if not user.is_authenticated:
 		return redirect('must_authenticate')
@@ -88,6 +89,10 @@ def edit_blog_view(request, slug):
 	return render(request, 'blog/edit_blog.html', context)
 
 def get_blog_queryset(user, query=None):
+	base = 1
+
+	# the interests of a post that are not in the user's intersts
+	not_common_interests= 0
 	queryset = []
 	queries = query.split(" ")
 	for q in queries:
@@ -98,10 +103,41 @@ def get_blog_queryset(user, query=None):
 			Q(body__icontains=q)
 			).annotate(weight = F('date_published')).distinct()
 		for post in posts:
-			print(BlogPost.post_score)
 			queryset.append(post)
+
+
 	# create unique set and then convert to list
-	for x in queryset:
-		x.post_score += 1
-		print(x.post_score)
+	# for post in queryset:
+	# 	for number in common_elements:
+	# 		score = (number)
+	# 		print(score)
+	profanity_list = open('profanity_list.txt').read().splitlines()
+
+	if user.is_authenticated:
+		temp_score = 0
+		for x in queryset:
+
+			common_result = []
+			non_common_result = []
+			print(x.title)
+			# print(x.interests)
+			x.post_score = x.date_updated.timestamp()
+			print (x.post_score)
+
+			for element in x.interests:
+				if element in user.interests:
+					common_result.append(element)
+					x.post_score = x.post_score * (len(common_result) * 5)
+
+				if element not in user.interests:
+					non_common_result.append(element)
+					x.post_score = x.post_score / (len(non_common_result) * 2)
+				if x.title in profanity_list or x.body in profanity_list:
+					x.post_score = x.post_score / 5
+
+			print(x.post_score)
+
+			# x.post_score = 0
+			# print(x.post_score)
+			# print(x.date_updated)
 	return list(set(queryset))
