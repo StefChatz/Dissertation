@@ -82,51 +82,13 @@
   <a class="m-auto" href="{% url 'password_change' %}">Change password</a>
 </div>
 
-<!-- <div class="container mt-4 p-4">
-
-  <br>
-  <h1 class="h3 mb-3 font-weight-normal">Preferences</h1>
-
-  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-    <div class="btn-group" role="group">
-      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Primary
-      </button>
-      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-        <a class="dropdown-item" href="#">Games</a>
-        <a class="dropdown-item" href="#">Social Networking</a>
-        <a class="dropdown-item" href="#">Music</a>
-        <a class="dropdown-item" href="#">Breaking News</a>
-        <a class="dropdown-item" href="#">Finance</a>
-        <a class="dropdown-item" href="#">Movies</a>
-        <a class="dropdown-item" href="#">Sports</a>
-        <a class="dropdown-item" href="#">Travel</a>
-        <a class="dropdown-item" href="#">Automotive</a>
-        <a class="dropdown-item" href="#">Leisure</a>
-      </div>
-    </div>
-
-    <div class="btn-group" role="group">
-      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Secondary
-      </button>
-      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-        <a class="dropdown-item" href="#">Games</a>
-        <a class="dropdown-item" href="#">Social Networking</a>
-        <a class="dropdown-item" href="#">Music</a>
-        <a class="dropdown-item" href="#">Breaking News</a>
-        <a class="dropdown-item" href="#">Finance</a>
-        <a class="dropdown-item" href="#">Movies</a>
-        <a class="dropdown-item" href="#">Sports</a>
-        <a class="dropdown-item" href="#">Travel</a>
-        <a class="dropdown-item" href="#">Automotive</a>
-        <a class="dropdown-item" href="#">Leisure</a>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-
+<div class="container mt-4 p-4 text-center justify-content-center">
+  <label class="h5 mb-3 font-weight-normal">Change Primary Interest</label>
+  <form class="form-check-label text-left" method='post'>{% csrf_token %}
+      {{ choices_form.interests }}
+      <button class="btn btn-lg btn-primary btn-block" type="submit" value="submit">Update</button>
+  </form>
+</div>
 
 <div class="container mt-4 p-4">
   <div class="row">

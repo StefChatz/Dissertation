@@ -5,19 +5,19 @@ from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from blog.views import get_blog_queryset
 from blog.models import BlogPost
 
+
 BLOG_POSTS_PER_PAGE = 10
 
 def home_screen_view(request, *args, **kwargs):
 
 	context = {}
-
 	# Search
 	query = ""
 	if request.GET:
 		query = request.GET.get('q', '')
 		context['query'] = str(query)
 
-	blog_posts = sorted(get_blog_queryset(query), key=attrgetter('date_updated'), reverse=True)
+	blog_posts = sorted(get_blog_queryset(request.user, query), key=attrgetter('date_updated'), reverse=True)
 
 
 

@@ -20,10 +20,13 @@
 			<div class="card-body mt-2 mb-2">
 			  <h2 class="card-title">{{blog_post.title}}</h2>
 			  <p class="card-text">{{blog_post.body|safe}}</p>
-				<p class="card-text text-right">
-					<span class="badge badge-pill badge-primary">Primary</span>
-					<span class="badge badge-pill badge-secondary">Secondary</span>
-				</p>
+				{% for interest in blog_post.interests %}
+					<p class="card-text text-right">
+						<span class="badge badge-pill badge-primary float-right">{{ interest }}</span>
+
+					</p>
+				{% endfor %}
+				<br>
 			  {% if blog_post.author == request.user %}
 			  	<a href="{% url 'blog:edit' blog_post.slug %}" class="btn btn-primary">Update</a>
 			  {% endif %}

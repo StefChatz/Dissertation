@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'django_static_jquery3',
     'django_static_arrive',
     'django_cascading_dropdown_widget',
+    'multiselectfield',
 ]
 
 MIDDLEWARE = [

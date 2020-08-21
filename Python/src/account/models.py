@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
-
+from multiselectfield import MultiSelectField
 
 class MyAccountManager(BaseUserManager):
 	def create_user(self, email, username, password=None):
@@ -30,6 +30,17 @@ class MyAccountManager(BaseUserManager):
 		user.save(using=self._db)
 		return user
 
+CHOICES = (
+	('games', 'GAMES'),
+	('social', 'SOCIAL'),
+	('music', 'MUSIC'),
+	('news', 'NEWS'),
+	('finance', 'FINANCE'),
+	('movies', 'MOVIES'),
+	('sports', 'SPORTS'),
+	('travel', 'TRAVEL'),
+	('automotive', 'AUTOMOTIVE'),
+	('leisure', 'LEISURE'))
 class Account(AbstractBaseUser):
 	email 					= models.EmailField(verbose_name="email", max_length=60, unique=True)
 	username 				= models.CharField(max_length=30, unique=True)
@@ -39,14 +50,7 @@ class Account(AbstractBaseUser):
 	is_active				= models.BooleanField(default=True)
 	is_staff				= models.BooleanField(default=False)
 	is_superuser			= models.BooleanField(default=False)
-
-#	CATEGORY_CHOICES		= [(GAMES, 'Games'), (SOCIAL, 'Social Networking'), (MUSIC, 'Music'),
-#		(NEWS, 'Breaking News'), (FINANCE, 'Finance'), (MOVIES, 'Movies'), (SPORTS, 'Sports'), (TRAVEL, 'Travel'),
-#		(AUTOMOTIVE, 'Automotive'), (LEISURE, 'Leisure')]
-
-#	choices = CharField(max_length=16,
-#                  choices=CATEGORY_CHOICES,
-#                  default=GAMES)
+	interests				= MultiSelectField(choices = CHOICES)
 
 	USERNAME_FIELD = 'email'
 	REQUIRED_FIELDS = ['username', ]
@@ -73,13 +77,7 @@ class Account(AbstractBaseUser):
     # AUTOMOTIVE = 'AUTOMOTIVE'
     # LEISURE = 'LEISURE'
 
-COLOR_CHOICES = (
-	('games', 'GAMES'),
-	('social', 'SOCIAL'),
-	('music', 'MUSIC'),
-	('news', 'NEWS'),
 
-)
 
 # COLOR_CHOICES = (
 # 	('GAMES', 'Games'),
@@ -93,9 +91,3 @@ COLOR_CHOICES = (
 # 	('AUTOMOTIVE', 'Automotive'),
 # 	('LEISURE', 'Leisure')
 # )
-class MyModel(models.Model):
-	color = models.CharField(
-		max_length=20,
-		choices=COLOR_CHOICES,
-        default='NEWS',
-		)

@@ -38,45 +38,11 @@
 					<label for="id_image">Image</label>
 					<input  type="file" name="image" id="id_image" accept="image/*" required>
 				</div>
+
+        <!-- Interests -->
         <div class="form-group">
-          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-
-            <div class="btn-group" role="group">
-              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Primary
-              </button>
-              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                <a class="dropdown-item" href="#">Games</a>
-                <a class="dropdown-item" href="#">Social Networking</a>
-                <a class="dropdown-item" href="#">Music</a>
-                <a class="dropdown-item" href="#">News</a>
-                <a class="dropdown-item" href="#">Banking/Finance</a>
-                <a class="dropdown-item" href="#">Movies</a>
-                <a class="dropdown-item" href="#">Sports</a>
-                <a class="dropdown-item" href="#">Travel</a>
-                <a class="dropdown-item" href="#">Automotive</a>
-                <a class="dropdown-item" href="#">Leisure</a>
-              </div>
-            </div>
-
-            <div class="btn-group" role="group">
-              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Secondary
-              </button>
-              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                <a class="dropdown-item" href="#">Games</a>
-                <a class="dropdown-item" href="#">Social Networking</a>
-                <a class="dropdown-item" href="#">Music</a>
-                <a class="dropdown-item" href="#">News</a>
-                <a class="dropdown-item" href="#">Banking/Finance</a>
-                <a class="dropdown-item" href="#">Movies</a>
-                <a class="dropdown-item" href="#">Sports</a>
-                <a class="dropdown-item" href="#">Travel</a>
-                <a class="dropdown-item" href="#">Automotive</a>
-                <a class="dropdown-item" href="#">Leisure</a>
-              </div>
-            </div>
-          </div>
+          <label for="id_title">Interests</label>
+          {{choices_form.interests}}
         </div>
 				<!-- Submit btn -->
 				<button class="submit-button btn btn-lg btn-primary btn-block" type="submit">POST</button>

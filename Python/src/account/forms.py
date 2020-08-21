@@ -3,7 +3,6 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate
 
 from account.models import Account
-from account.models import MyModel
 
 class RegistrationForm(UserCreationForm):
 	email = forms.EmailField(max_length=60, help_text='Required. Add a valid email address')
@@ -20,7 +19,6 @@ class AccountAuthenticationForm(forms.ModelForm):
 	class Meta:
 		model = Account
 		fields = ('email', 'password')
-
 	def clean(self):
 		if self.is_valid():
 			email = self.cleaned_data['email']
@@ -29,12 +27,24 @@ class AccountAuthenticationForm(forms.ModelForm):
 				raise forms.ValidationError("Invalid login")
 
 
+# class AccountCategoryForm(forms.ModelForm):
+#
+# 	class Meta:
+# 		model = Account
+# 		fields = ('primary_interest', 'secondary_interest')
+class AccountCategoryForm(forms.ModelForm):
+
+	class Meta:
+		model = Account
+		fields = ('interests',)
+
 
 class AccountUpdateForm(forms.ModelForm):
 
 	class Meta:
 		model = Account
-		fields = ('email', 'username')
+		fields = ('email', 'username', 'interests',)
+
 
 	def clean_email(self):
 		if self.is_valid():
@@ -74,7 +84,3 @@ class AccountUpdateForm(forms.ModelForm):
 # 		super(UserForm, self).__init__(*args, **kargs)
 #
 # category_field = forms.ChoiceField(choices = CATEGORY_CHOICES)
-class MyModelForm(forms.Form):
-    class Meta:
-        model = MyModel
-        fields = ['color']

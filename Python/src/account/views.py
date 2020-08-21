@@ -1,13 +1,11 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate, logout
 
-from account.forms import RegistrationForm, AccountAuthenticationForm, AccountUpdateForm
+from account.forms import RegistrationForm, AccountAuthenticationForm, AccountUpdateForm, AccountCategoryForm
 from blog.models import BlogPost
 from django.views.generic.edit import CreateView
 from django.views.generic.edit import FormView
-
-from account.models import MyModel
-from account.forms import MyModelForm
+from account.models import Account
 
 def registration_view(request):
 	context = {}
@@ -56,12 +54,10 @@ def login_view(request):
 
 	context['login_form'] = form
 
-	# print(form)
 	return render(request, "account/login.html", context)
 
 
 def account_view(request):
-
 	if not request.user.is_authenticated:
 			return redirect("login")
 
@@ -72,25 +68,39 @@ def account_view(request):
 			form.initial = {
 					"email": request.POST['email'],
 					"username": request.POST['username'],
+
 			}
 			form.save()
 			context['success_message'] = "Updated"
 	else:
 		form = AccountUpdateForm(
-
-			initial={
-					"email": request.user.email,
-					"username": request.user.username,
-				}
+				instance=request.user
 			)
 
 	context['account_form'] = form
+
+	if request.method == 'POST':
+		form = AccountCategoryForm(request.POST, instance=request.user)
+		if form.is_valid():
+			choices = form.cleaned_data.get('interests')
+			print(choices)
+			# for choice in choices:
+
+			form.initial = {
+				"interests" : request.POST['interests']
+			}
+			print("test")
+		else:
+			form = AccountCategoryForm(
+			instance=request.user
+			)
+
+	context['choices_form'] = form
 
 	blog_posts = BlogPost.objects.filter(author=request.user)
 	context['blog_posts'] = blog_posts
 
 	return render(request, "account/account.html", context)
-
 
 def must_authenticate_view(request):
 	return render(request, 'account/must_authenticate.html', {})
@@ -104,8 +114,3 @@ def must_authenticate_view(request):
 # 	model = Choices
 # 	form_class = ChoicesForm
 # 	template_name = 'account/account.html'
-class CreateMyModelView(CreateView):
-    model = MyModel
-    form_class = MyModelForm
-    template_name = 'account/account.html'
-    success_url = 'account/account.html'
