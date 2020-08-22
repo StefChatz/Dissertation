@@ -1,6 +1,57 @@
 % $Id: chapter9.tex 1790 2010-09-28 16:46:40Z jabriffa $
+\chapter {The Algorithm}
 
-\chapter {Constructing the Algorithm}
+\section{Planning}
 
-\section{Attributes}
-Most ranking algorithms as have been discussed, mainly revolve around some combination of voting and time. While some have more complicated parameters, they are usually tailored to the website's philosophy, such as the use of  the penaltiy attribute in Hacker Rank. However, since this project aims to provide the user with an automated display of the most relevant news tailored to the user's interests, voting will be replaced with the user's interests. To elaborate, the user is able to select interests in their account page which have a score associated to them. The time of a post created is a valuable attribute and is benefetial to be used, since it can never be the same even if all the parameters are the same, differentiating in that way two pottentially similar posts.
+Most ranking algorithms as have been discussed, mainly revolve around some combination of voting and time. While some have more complicated parameters, they are usually tailored to the website's philosophy, such as the use of  the penaltiy attribute in Hacker Rank. However, since this project aims to provide the user with an automated display of the most relevant news tailored to the user's interests, voting will be replaced with the user's interests.
+\paragraph{}
+The user should be able to select interests in their account page, which have a score associated with them and be a significant contributor in the score of a post. When a post gets created is also be a valuable attribute, and it should be beneficial to the algorithm since time can never be the same even if the rest of the attributes are the same, differentiating in that way two potentially similar posts. Another vital aspect to consider is how many interests does the post have, in which the user is not interested. However, the impact of this attribute should not be as negatively equal to a relevant interest in a post. For example, if the score of the common interest between user and post is equal to 10, a non-common interest should impact the overall score by -5 or lower. Lastly, the concept of banning or negatively reducing a ranking score is an essential attribute and can be detrimental in the image and environment that a system portrays.
+
+\section {Designing}
+
+\paragraph{}
+
+After a couple of failed attempts, the final algorithm was a combination time, common interests, non-common interests and penalties. The algorithm relies on multiplication and division to increase or decrease a rating for the sake of simplicity bundled with the fact that time which when denoted in timestamps usually tends to be a couple of digits long in the first place.
+
+\begin{figure}
+  \includegraphics[scale=0.4]{Figures/algorithm}
+  \caption{The stages of the final ranking algorithm.}
+  \label{fig:algorithm}
+\end{figure}
+
+Since time was going to be used as timestamps which usually tend to be a couple of digits long, the thought of using multiplication and division to increase or decrease a rating was used. As portrayed in ~\ref{fig:algorithm}, if the user is not logged in or, they have no interest selected, the score of each post is set equal to the time that the post was updated. However, if the user is logged in and has selected interests, then the existing score is multiplied by 5 for each common interest of the user and the post. Then for the deduction part of the algorithm, the score is halved for each non-common interest. This decision makes sense since if a potential user is interested in news, a post with only the "news" interest will rank higher than a post with the news and music interest unless the first post is much older than the second one. The last deduction part of the algorithm is penalties. Penalties that at the moment are profanity words, essentially counter a common interest, since the score of a post is divided by 5 for each penalized word the post contains.
+
+\section {Creating}
+
+Assigning each post with a score based on the parameters aforementioned happens when the "get\_blog\_queryset" function is called in "home\_screen\_view".
+
+\lstset{language=Python}
+\lstset{frame=lines}
+\begin{lstlisting}
+# Checks if the user is authenticated.
+if user.is_authenticated:
+for q in queryset:
+
+  # A list of common interests.
+  common_result = []
+  # A list of non-common interests.
+  non_common_result = []
+  # Set's the score to the time a post is updated.
+  q.post_score = q.date_updated.timestamp()
+
+  for element in q.interests:
+    # Updates based on common interests.
+    if element in user.interests:
+      common_result.append(element)
+      q.post_score = q.post_score * (len(common_result) * 5)
+
+    # Updates based on common interests.
+    if element not in user.interests:
+      non_common_result.append(element)
+      q.post_score = q.post_score / (len(non_common_result) * 2)
+
+    # Updates based on non-common interests.
+    if q.title in profanity_list or q.body in profanity_list:
+      for penalty in penalty_list:
+        q.post_score = q.post_score / (len(penalty_list) * 5)
+\end{lstlisting}

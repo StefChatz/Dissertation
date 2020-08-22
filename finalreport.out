@@ -10,30 +10,32 @@
 \BOOKMARK [1][-]{section.2.1}{Technologies Used}{chapter.2}% 10
 \BOOKMARK [2][-]{subsection.2.1.1}{Django Framework}{section.2.1}% 11
 \BOOKMARK [2][-]{subsection.2.1.2}{Atom}{section.2.1}% 12
-\BOOKMARK [1][-]{section.2.2}{Reddit Rank \(Hot Sort\)}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.1}{Weaknesses}{section.2.2}% 14
-\BOOKMARK [2][-]{subsection.2.2.2}{Conclusion}{section.2.2}% 15
-\BOOKMARK [1][-]{section.2.3}{Hacker News Rank}{chapter.2}% 16
-\BOOKMARK [2][-]{subsection.2.3.1}{Weaknesses}{section.2.3}% 17
-\BOOKMARK [2][-]{subsection.2.3.2}{Conclusion}{section.2.3}% 18
-\BOOKMARK [1][-]{section.2.4}{Wilson Confidence Sort}{chapter.2}% 19
-\BOOKMARK [1][-]{section.2.5}{Bayesian Average Ratings}{chapter.2}% 20
-\BOOKMARK [2][-]{subsection.2.5.1}{Frameworks}{section.2.5}% 21
-\BOOKMARK [2][-]{subsection.2.5.2}{Conclusion}{section.2.5}% 22
-\BOOKMARK [0][-]{chapter.3}{Constructing the Algorithm}{}% 23
-\BOOKMARK [1][-]{subsection.3.0.1}{Attributes}{chapter.3}% 24
-\BOOKMARK [0][-]{chapter.4}{System Analysis}{}% 25
-\BOOKMARK [1][-]{section.4.1}{Analysis of Existing Systems}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.2}{Feasibility and System Limitations}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.3}{User Experience}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.4}{Proposed Solutions}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.5}{Interview \046 Survey}{chapter.4}% 30
-\BOOKMARK [0][-]{chapter.5}{System Design}{}% 31
-\BOOKMARK [1][-]{section.5.1}{Prototype}{chapter.5}% 32
-\BOOKMARK [1][-]{section.5.2}{Design Overview}{chapter.5}% 33
-\BOOKMARK [1][-]{section.5.3}{User Interface Design and Usability}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.4}{Difficulties faced}{chapter.5}% 35
-\BOOKMARK [1][-]{section.5.5}{Main Implementation}{chapter.5}% 36
-\BOOKMARK [0][-]{chapter.6}{Testing \046 Evaluation}{}% 37
-\BOOKMARK [0][-]{chapter.7}{Statement of Ethics}{}% 38
-\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 39
+\BOOKMARK [1][-]{section.2.2}{Existing Solutions}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.1}{Reddit Rank \(Hot Sort\)}{section.2.2}% 14
+\BOOKMARK [3][-]{subsubsection.2.2.1.1}{Weaknesses}{subsection.2.2.1}% 15
+\BOOKMARK [3][-]{subsubsection.2.2.1.2}{Conclusion}{subsection.2.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.2.2}{Hacker News Rank}{section.2.2}% 17
+\BOOKMARK [3][-]{subsubsection.2.2.2.1}{Weaknesses}{subsection.2.2.2}% 18
+\BOOKMARK [3][-]{subsubsection.2.2.2.2}{Conclusion}{subsection.2.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.3}{Wilson Confidence Sort}{section.2.2}% 20
+\BOOKMARK [3][-]{subsubsection.2.2.3.1}{Conclusion}{subsection.2.2.3}% 21
+\BOOKMARK [2][-]{subsection.2.2.4}{Summary}{section.2.2}% 22
+\BOOKMARK [0][-]{chapter.3}{The Algorithm}{}% 23
+\BOOKMARK [1][-]{section.3.1}{Planning}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.2}{Designing}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.3}{Creating}{chapter.3}% 26
+\BOOKMARK [0][-]{chapter.4}{System Analysis}{}% 27
+\BOOKMARK [1][-]{section.4.1}{Analysis of Existing Systems}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.2}{Feasibility and System Limitations}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.3}{User Experience}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.4}{Proposed Solutions}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.5}{Interview \046 Survey}{chapter.4}% 32
+\BOOKMARK [0][-]{chapter.5}{System Design}{}% 33
+\BOOKMARK [1][-]{section.5.1}{Prototype}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.2}{Design Overview}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.3}{User Interface Design and Usability}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.4}{Difficulties faced}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.5}{Main Implementation}{chapter.5}% 38
+\BOOKMARK [0][-]{chapter.6}{Testing \046 Evaluation}{}% 39
+\BOOKMARK [0][-]{chapter.7}{Statement of Ethics}{}% 40
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 41

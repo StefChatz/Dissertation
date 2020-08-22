@@ -91,8 +91,6 @@ def edit_blog_view(request, slug):
 def get_blog_queryset(user, query=None):
 	base = 1
 
-	# the interests of a post that are not in the user's intersts
-	not_common_interests= 0
 	queryset = []
 	queries = query.split(" ")
 	for q in queries:
@@ -105,39 +103,34 @@ def get_blog_queryset(user, query=None):
 		for post in posts:
 			queryset.append(post)
 
+	# Gets the list of penalized words.
+	penalty_list = open('penalty_list.txt').read().splitlines()
 
-	# create unique set and then convert to list
-	# for post in queryset:
-	# 	for number in common_elements:
-	# 		score = (number)
-	# 		print(score)
-	profanity_list = open('profanity_list.txt').read().splitlines()
-
+	# Checks if the user is authenticated.
 	if user.is_authenticated:
-		temp_score = 0
-		for x in queryset:
+		for q in queryset:
 
+			# A list of common interests.
 			common_result = []
+			# A list of non-common interests.
 			non_common_result = []
-			print(x.title)
-			# print(x.interests)
-			x.post_score = x.date_updated.timestamp()
-			print (x.post_score)
+			# Set's the score to the time a post is updated.
+			q.post_score = q.date_updated.timestamp()
 
-			for element in x.interests:
+			for element in q.interests:
+				# Updates based on common interests.
 				if element in user.interests:
 					common_result.append(element)
-					x.post_score = x.post_score * (len(common_result) * 5)
+					q.post_score = q.post_score * (len(common_result) * 5)
 
+				# Updates based on common interests.
 				if element not in user.interests:
 					non_common_result.append(element)
-					x.post_score = x.post_score / (len(non_common_result) * 2)
-				if x.title in profanity_list or x.body in profanity_list:
-					x.post_score = x.post_score / 5
+					q.post_score = q.post_score / (len(non_common_result) * 2)
 
-			print(x.post_score)
+				# Updates based on non-common interests.
+				if q.title in profanity_list or q.body in profanity_list:
+					for penalty in penalty_list:
+						q.post_score = q.post_score / (len(penalty_list) * 5)
 
-			# x.post_score = 0
-			# print(x.post_score)
-			# print(x.date_updated)
 	return list(set(queryset))
