@@ -3,7 +3,7 @@
 \chapter {System Design}
 
 \section{Prototype}
-The prototype for the most part, consisted of the user being able to create an account, and create posts that simply included a text. As stated before, since I decided to use Django to develop this app, I had to work with apps. This means that every major aspect of the project such as blog posts and account of is implemented as an app.
+The prototype mostly consisted of the user being able to create an account, and create posts that simply included a text. As stated before, since I decided to use Django to develop this app, I had to work with apps. This means that every major aspect of the project such as blog posts and account of is implemented as an app.
 
 \begin{figure}[htbp]
 \begin{minipage}[t]{0.45\linewidth}
@@ -19,7 +19,7 @@ The prototype for the most part, consisted of the user being able to create an a
 \end{minipage}
 \end{figure}
 
-In \ref{account_view} are the methods, implemented during the prototype process that handled the account authentication.
+In Figure \ref{account_view} are the methods implemented during the prototype process that handled the account authentication.
 
 \section{User Interface Design and Usability}
 
@@ -37,11 +37,11 @@ In \ref{account_view} are the methods, implemented during the prototype process 
 \end{minipage}
 \end{figure}
 
-During the system analysis, I touched upon the user experience, both in how the user should interact with the colours and buttons and when a certain colour should be used. This section explains how those principles where implemented in the final version of the project. Moreover, the project is designed to work in a plethora of screen sizes as seen on \ref{home_mobile} and \ref{home_pc} making the project responsive and making the algorithm and purpose of this project to stand out, while at the same time providing an enjoyable experience to the user.
+During the system analysis, I touched upon the user experience, both in how the user should interact with the colours and buttons and when a certain colour should be used. This section explains how those principles where implemented in the final version of the project. The project is designed to work in a plethora of screen sizes as seen on \ref{home_mobile} and \ref{home_pc} making the project responsive giving the algorithm the chance to stand out, while providing an enjoyable experience to the user.
 
 \subsection{Home Page}
 
-\ref{home_pc} shows the home page view of the website. It consists of the template mentioned in the system analytics, and the rest of the website follows along with those characteristics. The page header, includes a welcoming message, a search bar and three buttons "Home, the "Account" button which displays the user's account page and a logout button. The header changed if the user is not logged in. Then we can see the main content, which includes the blog post that is implemented as mentioned before and the create post section which again, follows the user experience philosophy mentioned before.
+\ref{home_pc} shows the home page view of the website. It consists of the template mentioned in the system analytics, and the rest of the website follows along with those characteristics. The page header, includes a welcoming message, a search bar and three buttons which vary, depending on if the user is logged in or not. These buttons include: "Home", "Account" or "Login" and "Logout" or "Register". Then we can see the main content, which includes the blog post that is implemented as mentioned before and the create post section which again, follows the user experience philosophy mentioned before.
 
 \subsection{Account Page}
 
@@ -59,8 +59,7 @@ During the system analysis, I touched upon the user experience, both in how the 
 \end{minipage}
 \end{figure}
 
-\ref{account_1} and \ref{account_2} display the account page. Apart from the header which hasn't changed, the main page content has changed, and several fields are visible. In this page, the user can edit their personal information which is securely handled by Django's authentication system as well as configure their interests and view all the posts they have made. This page also follows the consistent design decisions mentioned before.
-
+\ref{account_1} and \ref{account_2} display the account page. Apart from the header which hasn't changed, the main page content has changed, and several fields are visible. In this page, the user can edit their personal information (which is securely handled by Django's authentication system); as well as configure their interests and view all the posts they have made. This page also follows the consistent design decisions mentioned before.
 
 \section{Difficulties faced}
 This part will mainly touch upon difficulties faced during the development process of designing and implementing the program.
@@ -69,6 +68,4 @@ This part will mainly touch upon difficulties faced during the development proce
 During the planning process, the choice to use Django was certainly not one without issues. For example, there isn't much information online to create a form that handles the information the way I needed them to and how to render them effectively. These issues mostly have to be learned through trial and error with the Django documentation being the sole guide. This resulted in spending a lot of time to learn all the Django components before the implementation could begin. Still, since many big organisations such as Reddit run their website entirely on the Django framework, it made me confident that the learning curve was worth it.
 
 \subsection{Development}
-During the development process, I did come across a few issues, mostly with versions of different dependencies and programs which sometimes resulted in restarting the project from the start. Moreover, I had to re-implement different versions of the algorithm and test them. This, however, became more difficult once I presented to the people that tested the application with two different algorithms, during the design process after which, they provided me information that I had to take into consideration and improve the final algorithm. However, now that I can reflect upon this issue, it is more apparent that the fact that the reimplementation process of changes and different versions of the algorithm, provided a valuable learning opportunity which led to me writing more efficient code overall.
-
-\section{Main Implementation}
+During the development process, I did come across a few issues, mostly regarding keeping track of versions from different dependencies and programs which sometimes resulted in restarting the project from the start. Moreover, I had to re-implement different variants of the algorithm and test them. This, however, became more difficult once I presented to the people that tested the application with two different algorithms. During the designing process, they provided me with information that I had to take into consideration and improve the final algorithm. Yet, now that I can reflect upon this issue, it is more apparent that the reimplementation process of reimplementing different parts of the algorithm, provided a valuable learning opportunity which led to me writing more efficient code overall.

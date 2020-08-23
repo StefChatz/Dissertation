@@ -12,8 +12,8 @@
 \contentsline {subsection}{\numberline {2.1.2}Atom}{17}{subsection.2.1.2}% 
 \contentsline {section}{\numberline {2.2}Existing Solutions}{17}{section.2.2}% 
 \contentsline {subsection}{\numberline {2.2.1}Reddit Rank (Hot Sort)}{17}{subsection.2.2.1}% 
-\contentsline {subsubsection}{\numberline {2.2.1.1}Weaknesses}{17}{subsubsection.2.2.1.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Hacker News Rank}{17}{subsection.2.2.2}% 
+\contentsline {subsubsection}{\numberline {2.2.1.1}Weaknesses}{18}{subsubsection.2.2.1.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Hacker News Rank}{18}{subsection.2.2.2}% 
 \contentsline {subsubsection}{\numberline {2.2.2.1}Weaknesses}{19}{subsubsection.2.2.2.1}% 
 \contentsline {subsubsection}{\numberline {2.2.2.2}Conclusion}{19}{subsubsection.2.2.2.2}% 
 \contentsline {subsection}{\numberline {2.2.3}Wilson Confidence Sort}{19}{subsection.2.2.3}% 
@@ -25,23 +25,22 @@
 \contentsline {section}{\numberline {3.2}Designing}{22}{section.3.2}% 
 \contentsline {paragraph}{}{22}{section*.9}% 
 \contentsline {section}{\numberline {3.3}Creating}{23}{section.3.3}% 
-\contentsline {chapter}{\numberline {4}System Analysis}{24}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Feasibility and System Limitations}{24}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}User Experience}{25}{section.4.2}% 
-\contentsline {paragraph}{}{25}{section*.10}% 
-\contentsline {section}{\numberline {4.3}System Requirements}{26}{section.4.3}% 
-\contentsline {subsection}{\numberline {4.3.1}Hosting Requirements}{26}{subsection.4.3.1}% 
-\contentsline {paragraph}{Specifications}{26}{section*.11}% 
-\contentsline {subsection}{\numberline {4.3.2}System Functionality}{27}{subsection.4.3.2}% 
-\contentsline {chapter}{\numberline {5}System Design}{28}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Prototype}{28}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}User Interface Design and Usability}{29}{section.5.2}% 
-\contentsline {subsection}{\numberline {5.2.1}Home Page}{30}{subsection.5.2.1}% 
-\contentsline {subsection}{\numberline {5.2.2}Account Page}{30}{subsection.5.2.2}% 
-\contentsline {section}{\numberline {5.3}Difficulties faced}{31}{section.5.3}% 
-\contentsline {subsection}{\numberline {5.3.1}Pre-development}{31}{subsection.5.3.1}% 
-\contentsline {subsection}{\numberline {5.3.2}Development}{31}{subsection.5.3.2}% 
-\contentsline {section}{\numberline {5.4}Main Implementation}{31}{section.5.4}% 
-\contentsline {chapter}{\numberline {6}Statement of Ethics}{32}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Leagal stantpoint}{32}{section.6.1}% 
-\contentsline {chapter}{\numberline {7}Conclusion}{33}{chapter.7}% 
+\contentsline {chapter}{\numberline {4}System Analysis}{25}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Feasibility and System Limitations}{25}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}User Experience}{26}{section.4.2}% 
+\contentsline {paragraph}{}{26}{section*.10}% 
+\contentsline {section}{\numberline {4.3}System Requirements}{27}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}Hosting Requirements}{27}{subsection.4.3.1}% 
+\contentsline {paragraph}{Specifications}{27}{section*.11}% 
+\contentsline {subsection}{\numberline {4.3.2}System Functionality}{28}{subsection.4.3.2}% 
+\contentsline {chapter}{\numberline {5}System Design}{29}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Prototype}{29}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}User Interface Design and Usability}{30}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Home Page}{31}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Account Page}{31}{subsection.5.2.2}% 
+\contentsline {section}{\numberline {5.3}Difficulties faced}{32}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Pre-development}{32}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}Development}{32}{subsection.5.3.2}% 
+\contentsline {chapter}{\numberline {6}Statement of Ethics}{33}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Leagal stantpoint}{33}{section.6.1}% 
+\contentsline {chapter}{\numberline {7}Conclusion}{34}{chapter.7}% 
