@@ -38,4 +38,5 @@
 \contentsline {section}{\numberline {5.5}Main Implementation}{25}{section.5.5}% 
 \contentsline {chapter}{\numberline {6}Testing \& Evaluation}{26}{chapter.6}% 
 \contentsline {chapter}{\numberline {7}Statement of Ethics}{27}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}Leagal stantpoint}{27}{section.7.1}% 
 \contentsline {chapter}{\numberline {8}Conclusion}{28}{chapter.8}% 

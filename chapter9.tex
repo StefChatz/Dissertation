@@ -3,7 +3,7 @@
 
 \section{Planning}
 
-Most ranking algorithms as have been discussed, mainly revolve around some combination of voting and time. While some have more complicated parameters, they are usually tailored to the website's philosophy, such as the use of  the penaltiy attribute in Hacker Rank. However, since this project aims to provide the user with an automated display of the most relevant news tailored to the user's interests, voting will be replaced with the user's interests.
+Most ranking algorithms as have been discussed, mainly revolve around some combination of voting and time. While some have more complicated parameters, they are usually tailored to the website's philosophy, such as the use of  the penalty attribute in Hacker Rank. However, since this project aims to provide the user with an automated display of the most relevant news tailored to the user's interests, voting will be replaced with the user's interests.
 \paragraph{}
 The user should be able to select interests in their account page, which have a score associated with them and be a significant contributor in the score of a post. When a post gets created is also be a valuable attribute, and it should be beneficial to the algorithm since time can never be the same even if the rest of the attributes are the same, differentiating in that way two potentially similar posts. Another vital aspect to consider is how many interests does the post have, in which the user is not interested. However, the impact of this attribute should not be as negatively equal to a relevant interest in a post. For example, if the score of the common interest between user and post is equal to 10, a non-common interest should impact the overall score by -5 or lower. Lastly, the concept of banning or negatively reducing a ranking score is an essential attribute and can be detrimental in the image and environment that a system portrays.
 
@@ -30,28 +30,28 @@ Assigning each post with a score based on the parameters aforementioned happens 
 \begin{lstlisting}
 # Checks if the user is authenticated.
 if user.is_authenticated:
-for q in queryset:
+for post in queryset:
 
   # A list of common interests.
   common_result = []
   # A list of non-common interests.
   non_common_result = []
   # Set's the score to the time a post is updated.
-  q.post_score = q.date_updated.timestamp()
+  post.post_score = post.date_updated.timestamp()
 
-  for element in q.interests:
+  for element in post.interests:
     # Updates based on common interests.
     if element in user.interests:
       common_result.append(element)
-      q.post_score = q.post_score * (len(common_result) * 5)
-
-    # Updates based on common interests.
-    if element not in user.interests:
-      non_common_result.append(element)
-      q.post_score = q.post_score / (len(non_common_result) * 2)
+      post.post_score = post.post_score * (len(common_result) * 5)
 
     # Updates based on non-common interests.
-    if q.title in profanity_list or q.body in profanity_list:
+    if element not in user.interests:
+      non_common_result.append(element)
+      post.post_score = post.post_score / (len(non_common_result) * 2)
+
+    # Updates based on the penalty words used.
+    if post.title in penalty_list or post.body in profanity_list:
       for penalty in penalty_list:
-        q.post_score = q.post_score / (len(penalty_list) * 5)
+        post.post_score = post.post_score / (len(penalty_list) * 5)
 \end{lstlisting}

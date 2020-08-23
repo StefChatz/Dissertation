@@ -98,7 +98,8 @@ def get_blog_queryset(user, query=None):
 
 		posts = BlogPost.objects.filter(
 			Q(title__contains=q)|
-			Q(body__icontains=q)
+			Q(body__icontains=q)|
+			Q(interests__icontains=q)
 			).annotate(weight = F('date_published')).distinct()
 		for post in posts:
 			queryset.append(post)
@@ -123,13 +124,13 @@ def get_blog_queryset(user, query=None):
 					common_result.append(element)
 					q.post_score = q.post_score * (len(common_result) * 5)
 
-				# Updates based on common interests.
+				# Updates based on non-common interests.
 				if element not in user.interests:
 					non_common_result.append(element)
 					q.post_score = q.post_score / (len(non_common_result) * 2)
 
-				# Updates based on non-common interests.
-				if q.title in profanity_list or q.body in profanity_list:
+				# Updates based on penalty words.
+				if q.title in penalty_list or q.body in penalty_list:
 					for penalty in penalty_list:
 						q.post_score = q.post_score / (len(penalty_list) * 5)
 

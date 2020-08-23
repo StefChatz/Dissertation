@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.16)  23 AUG 2020 01:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.16)  23 AUG 2020 12:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -316,26 +316,34 @@ File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
 Package: listings 2019/02/27 1.8b (Carsten Heinz)
 
+(/usr/local/texlive/2019/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen132
+\WF@size=\dimen133
+\c@WF@wrappedlines=\count126
+\WF@box=\box31
+\WF@everypar=\toks24
+Package: wrapfig 2003/01/31  v 3.6
+)
 (./finalreport.aux (./abstract.aux) (./acknowledgements.aux) (./glossary.aux)
 (./abbrev.aux) (./chapter1.aux) (./chapter2.aux) (./chapter9.aux)
 (./chapter3.aux) (./chapter4.aux) (./chapter6.aux) (./chapter7.aux)
 (./chapter8.aux))
 \openout1 = `finalreport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -373,17 +381,17 @@ LaTeX Font Info:    ... okay on input line 25.
 
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count126
-\scratchdimen=\dimen132
-\scratchbox=\box31
-\nofMPsegments=\count127
-\nofMParguments=\count128
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count129
-\MPscratchDim=\dimen133
-\MPnumerator=\count130
-\makeMPintoPDFobject=\count131
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count127
+\scratchdimen=\dimen134
+\scratchbox=\box32
+\nofMPsegments=\count128
+\nofMParguments=\count129
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count130
+\MPscratchDim=\dimen135
+\MPnumerator=\count131
+\makeMPintoPDFobject=\count132
+\everyMPtoPDFconversion=\toks26
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -401,8 +409,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 25.
+\AtBeginShipoutBox=\box33
+Package hyperref Info: Link coloring OFF on input line 27.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -410,11 +418,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count132
+\c@section@level=\count133
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \nameref on input line 27.
 
 (./finalreport.out) (./finalreport.out)
 \@outlinefile=\write3
@@ -424,7 +432,7 @@ LaTeX Info: Redefining \nameref on input line 25.
 ..............................................................
 You are using the surrey dissertation style (Johann A. Briffa)
 ..............................................................
-\c@lstlisting=\count133
+\c@lstlisting=\count134
 [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX w
@@ -432,15 +440,15 @@ arning (ext4): destination with the same identifier (name{page.1}) has been alr
 eady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.26 \maketitle
+l.28 \maketitle
                 [1]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 26.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 28.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
  [2]
 \openout2 = `abstract.aux'.
 
@@ -508,19 +516,19 @@ Chapter 2.
 
 
 ]
-<Figures/reddit_rank.png, id=294, 401.5pt x 384.43625pt>
+<Figures/reddit_rank.png, id=301, 401.5pt x 384.43625pt>
 File: Figures/reddit_rank.png Graphic file (type png)
 <use Figures/reddit_rank.png>
 Package pdftex.def Info: Figures/reddit_rank.png  used on input line 21.
 (pdftex.def)             Requested size: 401.49901pt x 384.4353pt.
  [16]
-<Figures/hacker_news_rank.png, id=299, 328.22626pt x 74.2775pt>
+<Figures/hacker_news_rank.png, id=307, 328.22626pt x 74.2775pt>
 File: Figures/hacker_news_rank.png Graphic file (type png)
 <use Figures/hacker_news_rank.png>
 Package pdftex.def Info: Figures/hacker_news_rank.png  used on input line 36.
 (pdftex.def)             Requested size: 328.22545pt x 74.27731pt.
  [17 <./Figures/reddit_rank.png (PNG copy)>]
-<Figures/wilson_confidence.png, id=306, 653.44125pt x 84.315pt>
+<Figures/wilson_confidence.png, id=313, 653.44125pt x 84.315pt>
 File: Figures/wilson_confidence.png Graphic file (type png)
 <use Figures/wilson_confidence.png>
 Package pdftex.def Info: Figures/wilson_confidence.png  used on input line 55.
@@ -535,7 +543,7 @@ Chapter 3.
 
 
 ]
-<Figures/algorithm.png, id=325, 1075.01625pt x 753.81625pt>
+<Figures/algorithm.png, id=332, 1075.01625pt x 753.81625pt>
 File: Figures/algorithm.png Graphic file (type png)
 <use Figures/algorithm.png>
 Package pdftex.def Info: Figures/algorithm.png  used on input line 17.
@@ -543,17 +551,27 @@ Package pdftex.def Info: Figures/algorithm.png  used on input line 17.
  [21 <./Figures/algorithm.png>]
 (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/02/27 1.8b listings language file
-)) [22]
+)
+Overfull \hbox (4.32748pt too wide) in paragraph at lines 51--53
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [22]
 \openout2 = `chapter3.aux'.
 
-
-(./chapter3.tex
+ (./chapter3.tex
 Chapter 4.
 [23
 
 
 
-]) [24]
+]
+<Figures/bootstrap_colours.png, id=376, 216.81pt x 409.53pt>
+File: Figures/bootstrap_colours.png Graphic file (type png)
+<use Figures/bootstrap_colours.png>
+Package pdftex.def Info: Figures/bootstrap_colours.png  used on input line 21.
+(pdftex.def)             Requested size: 108.40472pt x 204.7645pt.
+) [24 <./Figures/bootstrap_colours.png>]
 \openout2 = `chapter4.aux'.
 
  (./chapter4.tex
@@ -643,24 +661,24 @@ org / en-[]US / docs / Learn / Server-[]side / Django /
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
  [30]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
  (./finalreport.aux (./abstract.aux) (./acknowledgements.aux)
 (./glossary.aux) (./abbrev.aux) (./chapter1.aux) (./chapter2.aux)
 (./chapter9.aux) (./chapter3.aux) (./chapter4.aux) (./chapter6.aux)
 (./chapter7.aux) (./chapter8.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
 Package rerunfilecheck Info: File `finalreport.out' has not changed.
-(rerunfilecheck)             Checksum: FB021161DC72919D4ABDA374CF95DC6A;2482.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 57.
+(rerunfilecheck)             Checksum: 2554DB30F98C6E3395D9EA8CE055C6C5;2546.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 59.
  ) 
 Here is how much of TeX's memory you used:
- 8845 strings out of 492616
- 124868 string characters out of 6129481
- 425758 words of memory out of 5000000
- 12454 multiletter control sequences out of 15000+600000
+ 8922 strings out of 492616
+ 125910 string characters out of 6129481
+ 426960 words of memory out of 5000000
+ 12518 multiletter control sequences out of 15000+600000
  16555 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,10n,45p,1392b,1205s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -677,10 +695,10 @@ xlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texl
 ive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texliv
 e/2019/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/
 2019/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on finalreport.pdf (31 pages, 381060 bytes).
+Output written on finalreport.pdf (31 pages, 408778 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 427 compressed objects within 5 object streams
- 116 named destinations out of 1000 (max. 500000)
- 333 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 500 PDF objects out of 1000 (max. 8388607)
+ 441 compressed objects within 5 object streams
+ 124 named destinations out of 1000 (max. 500000)
+ 346 words of extra memory for PDF output out of 10000 (max. 10000000)
 
