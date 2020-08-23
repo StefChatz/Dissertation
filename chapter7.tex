@@ -1,3 +1,16 @@
 % $Id: chapter7.tex 1790 2010-09-28 16:46:40Z jabriffa $
 
 \chapter {Statement of Ethics}
+During the creation of this project, all the legal, ethical and social aspects have been considered and analyzed below. Since one objective of this project is to eliminate the existence of administrators and moderators, the user's information itself should not ever be intervened by anyone.
+
+\section{Leagal stantpoint}
+In the process of creating this project I was extra careful that the information and software I used were under open-source or similar licenses. This is important since many relevant to this project technologies are licensed so that they can not be used in any shape or form. Furthermore, most of the software I used had technologies that handled user information securely by hashing or other ways. Specifically this what Django's authentication system consists of:
+
+\begin{enumerate}
+  \item Users
+  \item Permissions: Binary (yes/no) flags designating whether a user may perform a certain task.
+  \item Groups: A generic way of applying labels and permissions to more than one user.
+  \item A configurable password hashing system
+  \item Forms and view tools for logging in users, or restricting content
+  \item A pluggable backend system
+\end{enumerate}

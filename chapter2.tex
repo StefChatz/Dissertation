@@ -6,7 +6,7 @@
 During the entire design and implementation process, the decision was made to use the Python programming language. This choice was made originally for the ease of implementing algorithms in a scripting language like python. However, while progressing from the testing phase to the development phase, a dilemma was faced. Either to re-implement most of the progress I had made to a language that was more web and browser-based like JavaScript or, to create a hybrid of both front-end and back-end schemes. After some research online, Django was used, a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
 
 \subsection{Django Framework}
-According to the official Django website, "Django is a framework that was built as a tool for front-end developers that needed a simple way to bring their ideas to life without the need of a back-end developer that handles processes such as creating and connecting the server-side with the client-side as well as the creation and handling of the system's database (Django, July 2005). Furthermore, Django is a high-level Python framework that utilizes SQLite as a relational database. Moreover, Django uses an MVT pattern similar to the more widely used MVC that frameworks like Ruby and Ruby on Rails uses.
+According to the official Django website, "Django is a framework that was built as a tool for front-end developers that needed a simple way to bring their ideas to life without the need of a back-end developer that handles processes such as creating and connecting the server-side with the client-side as well as the creation and handling of the system's database \cite{djangostars_2016_why}. Furthermore, Django is a high-level Python framework that utilizes SQLite as a relational database. Moreover, Django uses an MVT pattern similar to the more widely used MVC that frameworks like Ruby and Ruby on Rails uses. Lastly, Django is secure. It has one of the best out-of-the-box security systems out there, and it helps developers avoid common security issues, including clickjacking, cross-site scripting and SQL injection.
 
 \subsection {Atom}
 Since the whole project was entirely in Django, it meant that all the code was compiled through the console. For the text and file editor, Atom was used for its familiarity and simplicity. Moreover, for testing and displaying the application, Google Chrome was used.
@@ -18,18 +18,15 @@ After conducting research, it was clear that one of the most popular social news
 
 \begin{figure}[!htb]
  \begin{center}
-	 \includegraphics{Figures/reddit_rank}
+	 \includegraphics{Figures/reddit_rank.png}
  \end{center}
  \caption{Reddit Ranking Algorithm in mathematical notation}
 \end{figure}
 
 
 \subsubsection {Weaknesses}
-\begin{itemize}
-  \item An issue which is absent currently Reddit, but present in a lot of websites that take average rating as a rating attribute, is the following: Average rating works fine if you always have a ton of ratings, but suppose item 1 has 2 positive ratings and 0 negative ratings. Suppose item 2 has 100 positive ratings and 1 negative rating. This algorithm puts item two (tons of positive ratings) below item one (very few positive ratings).
-\end{itemize}
+An issue which is absent currently Reddit, but present in a lot of websites that take average rating as a rating attribute, is the following: Average rating works fine if you always have a ton of ratings, but suppose item 1 has 2 positive ratings and 0 negative ratings. Suppose item 2 has 100 positive ratings and 1 negative rating. This algorithm puts item two (tons of positive ratings) below item one (very few positive ratings).
 
-\subsubsection {Conclusion}
 
 \subsection{Hacker News Rank}
 Hacker News is one of the most popular social news aggregator targeted towards developers and provides its users with mostly technology related news. Their ranking consists of three parameters, penalties, votes and age. The most impactful parameter on the formula is the penalty. The penalty's value is determined by the use of blacklisted words such as "NSA" which drops the story rapidly in the ranking. In order to keep the top stories fresh, Hacker News also issues a severe penalty on stories that reach 40 comments. The impact of a penalty can be calculated with the scoring formula since if an article gets penalty factor of 0.4, each vote will now count as 0.3. However, a factor of 0.1 is equivalent to each vote, counting 0.05. Meaning that although a penalty factor of 0.4 would drop an article 66\% faster than usual, a factor of  0.1 would drop an article by 3.6 times than normal. In outline, each item is given a ranking, and the articles are sorted according to the ranking. The simplistic way to think about ranking is the number of votes is divided by time, so more votes results in a higher ranking, but the ranking also drops over time. The votes are raised to a power less than one, while the time is raised to a power greater than one, so time has more effect than votes. Some additional penalties also may be applied to the ranking.
@@ -51,7 +48,7 @@ Overall, Hacker News's algorithm is quite simple, thus making the implementation
 The use of penalty is an interesting concept that would make sense in a user generated content system in which there are no administrators to regulate the content.
 
 \subsection {Wilson Confidence Sort}
-The problem that the Wilson confidence score tried to resolve was, developers who need their application's users to sort things. In order to balance the proportion of positive ratings with the uncertainty of a small number of observations. The math to solve this problem was worked out in 1927 by Edwin B. Wilson(Miller, Feb. 2009). Considering only positive and negative ratings (i.e. not a 5-star scale), the lower bound on the proportion of positive ratings is given by:
+The problem that the Wilson confidence score tried to resolve was, developers who need their application's users to sort things. In order to balance the proportion of positive ratings with the uncertainty of a small number of observations. The math to solve this problem was worked out in 1927 by Edwin B. Wilson \cite{miller_2009_how}. Considering only positive and negative ratings (i.e. not a 5-star scale), the lower bound on the proportion of positive ratings is given by:
 
 \begin{figure} [!htb]
   \centering

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.16)  22 AUG 2020 22:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.16)  23 AUG 2020 01:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -508,22 +508,22 @@ Chapter 2.
 
 
 ]
-<Figures/reddit_rank.png, id=306, 401.5pt x 384.43625pt>
+<Figures/reddit_rank.png, id=294, 401.5pt x 384.43625pt>
 File: Figures/reddit_rank.png Graphic file (type png)
 <use Figures/reddit_rank.png>
 Package pdftex.def Info: Figures/reddit_rank.png  used on input line 21.
 (pdftex.def)             Requested size: 401.49901pt x 384.4353pt.
  [16]
-<Figures/hacker_news_rank.png, id=312, 328.22626pt x 74.2775pt>
+<Figures/hacker_news_rank.png, id=299, 328.22626pt x 74.2775pt>
 File: Figures/hacker_news_rank.png Graphic file (type png)
 <use Figures/hacker_news_rank.png>
-Package pdftex.def Info: Figures/hacker_news_rank.png  used on input line 39.
+Package pdftex.def Info: Figures/hacker_news_rank.png  used on input line 36.
 (pdftex.def)             Requested size: 328.22545pt x 74.27731pt.
  [17 <./Figures/reddit_rank.png (PNG copy)>]
-<Figures/wilson_confidence.png, id=318, 653.44125pt x 84.315pt>
+<Figures/wilson_confidence.png, id=306, 653.44125pt x 84.315pt>
 File: Figures/wilson_confidence.png Graphic file (type png)
 <use Figures/wilson_confidence.png>
-Package pdftex.def Info: Figures/wilson_confidence.png  used on input line 58.
+Package pdftex.def Info: Figures/wilson_confidence.png  used on input line 55.
 (pdftex.def)             Requested size: 326.71982pt x 42.15738pt.
  [18 <./Figures/hacker_news_rank.png>]) [19 <./Figures/wilson_confidence.png>]
 \openout2 = `chapter9.aux'.
@@ -535,7 +535,7 @@ Chapter 3.
 
 
 ]
-<Figures/algorithm.png, id=337, 1075.01625pt x 753.81625pt>
+<Figures/algorithm.png, id=325, 1075.01625pt x 753.81625pt>
 File: Figures/algorithm.png Graphic file (type png)
 <use Figures/algorithm.png>
 Package pdftex.def Info: Figures/algorithm.png  used on input line 17.
@@ -549,16 +549,16 @@ File: lstlang1.sty 2019/02/27 1.8b listings language file
 
 (./chapter3.tex
 Chapter 4.
-) [23
+[23
 
 
 
-]
+]) [24]
 \openout2 = `chapter4.aux'.
 
  (./chapter4.tex
 Chapter 5.
-) [24
+) [25
 
 
 
@@ -567,7 +567,7 @@ Chapter 5.
 
  (./chapter6.tex
 Chapter 6.
-) [25
+) [26
 
 
 
@@ -576,7 +576,7 @@ Chapter 6.
 
  (./chapter7.tex
 Chapter 7.
-) [26
+) [27
 
 
 
@@ -585,50 +585,102 @@ Chapter 7.
 
  (./chapter8.tex
 Chapter 8.
-) [27
+) [28
 
+
+
+] (./finalreport.bbl
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 6.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Overfull \hbox (168.81133pt too wide) in paragraph at lines 3--7
+\T1/cmr/m/n/10.95 URL: []$\T1/cmtt/m/n/10.95 https : / / coderwall . com / p / 
+cacyhw / an-[]introduction-[]to-[]ranking-[]algorithms-[]seen-[]on-[]social-[]n
+ews-[]aggregators$[] 
+ []
+
+
+Overfull \hbox (129.20273pt too wide) in paragraph at lines 13--17
+\T1/cmr/m/n/10.95 URL: []$\T1/cmtt/m/n/10.95 https : / / medium . com / @DoorDa
+sh / tips-[]for-[]building-[]high-[]quality-[]django-[]apps-[]at-[]scale-[]a5a2
+5917b2b5$[] 
+ []
+
+
+Overfull \hbox (13.53531pt too wide) in paragraph at lines 34--38
+\T1/cmr/m/n/10.95 URL: []$\T1/cmtt/m/n/10.95 http : / / leankit . com / blog / 
+2019 / 03 / top-[]6-[]software-[]development-[]methodologies/$[] 
+ []
+
+
+Overfull \hbox (106.06924pt too wide) in paragraph at lines 44--48
+\T1/cmr/m/n/10.95 URL: []$\T1/cmtt/m/n/10.95 https : / / medium . com / hacking
+-[]and-[]gonzo / how-[]hacker-[]news-[]ranking-[]algorithm-[]works-[]1d9b0cf2c0
+8d$[] 
+ []
+
+
+Overfull \hbox (77.27739pt too wide) in paragraph at lines 49--53
+\T1/cmr/m/n/10.95 URL: []$\T1/cmtt/m/n/10.95 https : / / medium . com / hacking
+-[]and-[]gonzo / how-[]reddit-[]ranking-[]algorithms-[]work-[]ef111e33d0d9$[] 
+ []
+
+[29
 
 
 ]
-No file finalreport.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
-(./finalreport.aux (./abstract.aux) (./acknowledgements.aux) (./glossary.aux)
-(./abbrev.aux) (./chapter1.aux) (./chapter2.aux) (./chapter9.aux)
-(./chapter3.aux) (./chapter4.aux) (./chapter6.aux) (./chapter7.aux)
-(./chapter8.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
+Underfull \hbox (badness 10000) in paragraph at lines 54--58
+\T1/cmr/m/n/10.95 URL: []$\T1/cmtt/m/n/10.95 http : / / www . righto . com / 20
+13 / 11 / how-[]hacker-[]news-[]ranking-[]really-[]works .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--67
+\T1/cmr/m/n/10.95 URL: []$\T1/cmtt/m/n/10.95 https : / / developer . mozilla . 
+org / en-[]US / docs / Learn / Server-[]side / Django /
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
+ [30]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
+ (./finalreport.aux (./abstract.aux) (./acknowledgements.aux)
+(./glossary.aux) (./abbrev.aux) (./chapter1.aux) (./chapter2.aux)
+(./chapter9.aux) (./chapter3.aux) (./chapter4.aux) (./chapter6.aux)
+(./chapter7.aux) (./chapter8.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
 Package rerunfilecheck Info: File `finalreport.out' has not changed.
-(rerunfilecheck)             Checksum: 3DD7DEEA38A09D31D7C6591610F478DA;2618.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
+(rerunfilecheck)             Checksum: FB021161DC72919D4ABDA374CF95DC6A;2482.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 57.
  ) 
 Here is how much of TeX's memory you used:
- 8772 strings out of 492616
- 122733 string characters out of 6129481
- 425034 words of memory out of 5000000
- 12389 multiletter control sequences out of 15000+600000
- 16241 words of font info for 38 fonts, out of 8000000 for 9000
+ 8845 strings out of 492616
+ 124868 string characters out of 6129481
+ 425758 words of memory out of 5000000
+ 12454 multiletter control sequences out of 15000+600000
+ 16555 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,10n,45p,1392b,1205s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/l
-ocal/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/loc
-al/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local
-/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/t
-exlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/tex
-live/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texli
-ve/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive
-/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2
-019/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on finalreport.pdf (28 pages, 355299 bytes).
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></us
+r/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/
+local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/lo
+cal/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/loca
+l/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/
+texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/te
+xlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texl
+ive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texliv
+e/2019/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/
+2019/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on finalreport.pdf (31 pages, 381060 bytes).
 PDF statistics:
- 469 PDF objects out of 1000 (max. 8388607)
- 414 compressed objects within 5 object streams
- 114 named destinations out of 1000 (max. 500000)
- 349 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 484 PDF objects out of 1000 (max. 8388607)
+ 427 compressed objects within 5 object streams
+ 116 named destinations out of 1000 (max. 500000)
+ 333 words of extra memory for PDF output out of 10000 (max. 10000000)
 

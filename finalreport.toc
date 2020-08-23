@@ -13,7 +13,6 @@
 \contentsline {section}{\numberline {2.2}Existing Solutions}{16}{section.2.2}% 
 \contentsline {subsection}{\numberline {2.2.1}Reddit Rank (Hot Sort)}{16}{subsection.2.2.1}% 
 \contentsline {subsubsection}{\numberline {2.2.1.1}Weaknesses}{16}{subsubsection.2.2.1.1}% 
-\contentsline {subsubsection}{\numberline {2.2.1.2}Conclusion}{16}{subsubsection.2.2.1.2}% 
 \contentsline {subsection}{\numberline {2.2.2}Hacker News Rank}{16}{subsection.2.2.2}% 
 \contentsline {subsubsection}{\numberline {2.2.2.1}Weaknesses}{18}{subsubsection.2.2.2.1}% 
 \contentsline {subsubsection}{\numberline {2.2.2.2}Conclusion}{18}{subsubsection.2.2.2.2}% 
@@ -27,17 +26,16 @@
 \contentsline {paragraph}{}{21}{section*.9}% 
 \contentsline {section}{\numberline {3.3}Creating}{22}{section.3.3}% 
 \contentsline {chapter}{\numberline {4}System Analysis}{23}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Analysis of Existing Systems}{23}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Feasibility and System Limitations}{23}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}User Experience}{23}{section.4.3}% 
-\contentsline {section}{\numberline {4.4}Proposed Solutions}{23}{section.4.4}% 
-\contentsline {section}{\numberline {4.5}Interview \& Survey}{23}{section.4.5}% 
-\contentsline {chapter}{\numberline {5}System Design}{24}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Prototype}{24}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Design Overview}{24}{section.5.2}% 
-\contentsline {section}{\numberline {5.3}User Interface Design and Usability}{24}{section.5.3}% 
-\contentsline {section}{\numberline {5.4}Difficulties faced}{24}{section.5.4}% 
-\contentsline {section}{\numberline {5.5}Main Implementation}{24}{section.5.5}% 
-\contentsline {chapter}{\numberline {6}Testing \& Evaluation}{25}{chapter.6}% 
-\contentsline {chapter}{\numberline {7}Statement of Ethics}{26}{chapter.7}% 
-\contentsline {chapter}{\numberline {8}Conclusion}{27}{chapter.8}% 
+\contentsline {section}{\numberline {4.1}Feasibility and System Limitations}{23}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}User Experience}{24}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Problems and Proposed Solutions}{24}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}Interview \& Survey}{24}{section.4.4}% 
+\contentsline {chapter}{\numberline {5}System Design}{25}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Prototype}{25}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Design Overview}{25}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}User Interface Design and Usability}{25}{section.5.3}% 
+\contentsline {section}{\numberline {5.4}Difficulties faced}{25}{section.5.4}% 
+\contentsline {section}{\numberline {5.5}Main Implementation}{25}{section.5.5}% 
+\contentsline {chapter}{\numberline {6}Testing \& Evaluation}{26}{chapter.6}% 
+\contentsline {chapter}{\numberline {7}Statement of Ethics}{27}{chapter.7}% 
+\contentsline {chapter}{\numberline {8}Conclusion}{28}{chapter.8}% 

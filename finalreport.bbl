@@ -1,0 +1,68 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Billard}{2019}{michelbillard_2019_an}
+Billard, M.  \harvardyearleft 2019\harvardyearright , `An introduction to
+  ranking algorithms seen on social news aggregators (example)'.
+\newline\harvardurl{https://coderwall.com/p/cacyhw/an-introduction-to-ranking-algorithms-seen-on-social-news-aggregators}
+
+\harvarditem{Contributors}{2019}{wikipediacontributors_2019_bootstrap}
+Contributors, W.  \harvardyearleft 2019\harvardyearright , `Bootstrap
+  (front-end framework)'.
+\newline\harvardurl{https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)}
+
+\harvarditem{DoorDash}{2017}{doordash_2017_tips}
+DoorDash  \harvardyearleft 2017\harvardyearright , `Tips for building
+  high-quality django apps at scale'.
+\newline\harvardurl{https://medium.com/@DoorDash/tips-for-building-high-quality-django-apps-at-scale-a5a25917b2b5}
+
+\harvarditem{Editorial-Team}{2016}{djangostars_2016_why}
+Editorial-Team  \harvardyearleft 2016\harvardyearright , `Why we use django
+  framework and what is django best used for'.
+\newline\harvardurl{https://djangostars.com/blog/why-we-use-django-framework/}
+
+\harvarditem{Gabriel}{2020}{gabriel_2020_robertjgabrielgoogleprofanitywords}
+Gabriel, R.~J.  \harvardyearleft 2020\harvardyearright ,
+  `Robertjgabriel/google-profanity-words'.
+\newline\harvardurl{https://github.com/RobertJGabriel/Google-profanity-words}
+
+\harvarditem{Laramee}{2011}{laramee_2011_bobs}
+Laramee, R.~S.  \harvardyearleft 2011\harvardyearright , `Bob’s project
+  guidelines: Writing a dissertation for a bsc. in computer science', {\em
+  Innovation in Teaching and Learning in Information and Computer Sciences}
+  {\bf 10},~43--54.
+
+\harvarditem{Majewski}{2019}{majewski_2019_top}
+Majewski, M.  \harvardyearleft 2019\harvardyearright , `Top 6 software
+  development methodologies - blog | planview'.
+\newline\harvardurl{http://leankit.com/blog/2019/03/top-6-software-development-methodologies/}
+
+\harvarditem{Miller}{2009}{miller_2009_how}
+Miller, E.  \harvardyearleft 2009\harvardyearright , `How not to sort by
+  average rating'.
+\newline\harvardurl{https://www.evanmiller.org/how-not-to-sort-by-average-rating.html}
+
+\harvarditem{Salihefendic}{2015{\em a}}{salihefendic_2015_how}
+Salihefendic, A.  \harvardyearleft 2015{\em a}\harvardyearright , `How hacker
+  news ranking algorithm works'.
+\newline\harvardurl{https://medium.com/hacking-and-gonzo/how-hacker-news-ranking-algorithm-works-1d9b0cf2c08d}
+
+\harvarditem{Salihefendic}{2015{\em b}}{amirsalihefendic_2015_how}
+Salihefendic, A.  \harvardyearleft 2015{\em b}\harvardyearright , `How reddit
+  ranking algorithms work'.
+\newline\harvardurl{https://medium.com/hacking-and-gonzo/how-reddit-ranking-algorithms-work-ef111e33d0d9}
+
+\harvarditem{Shirriff}{2013}{shirriff_2013_how}
+Shirriff, K.~S.  \harvardyearleft 2013\harvardyearright , `How hacker news
+  ranking really works: scoring, controversy, and penalties'.
+\newline\harvardurl{http://www.righto.com/2013/11/how-hacker-news-ranking-really-works.html}
+
+\harvarditem{Stackify}{2017}{stackify_2017_what}
+Stackify  \harvardyearleft 2017\harvardyearright , `What is sdlc? understand
+  the software development life cycle'.
+\newline\harvardurl{https://stackify.com/what-is-sdlc/}
+
+\harvarditem{Willee}{2016}{willee_2016_django}
+Willee, H.  \harvardyearleft 2016\harvardyearright , `Django introduction'.
+\newline\harvardurl{https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction}
+
+\end{thebibliography}
