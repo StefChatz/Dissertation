@@ -1,5 +1,10 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{Bell}{2009}{bell_2009_a}
+Bell, R.  \harvardyearleft 2009\harvardyearright , `A beginner's guide to big o
+  notation - rob bell'.
+\newline\harvardurl{https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/}
+
 \harvarditem{Billard}{2019}{michelbillard_2019_an}
 Billard, M.  \harvardyearleft 2019\harvardyearright , `An introduction to
   ranking algorithms seen on social news aggregators (example)'.
@@ -24,6 +29,10 @@ Editorial-Team  \harvardyearleft 2016\harvardyearright , `Why we use django
 Gabriel, R.~J.  \harvardyearleft 2020\harvardyearright ,
   `Robertjgabriel/google-profanity-words'.
 \newline\harvardurl{https://github.com/RobertJGabriel/Google-profanity-words}
+
+\harvarditem{Harris}{2009}{harris_2009_ethical}
+Harris, J.  \harvardyearleft 2009\harvardyearright , `Ethical issues in web
+  design'.
 
 \harvarditem{Laramee}{2011}{laramee_2011_bobs}
 Laramee, R.~S.  \harvardyearleft 2011\harvardyearright , `Bob’s project

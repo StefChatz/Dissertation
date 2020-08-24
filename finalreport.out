@@ -23,20 +23,30 @@
 \BOOKMARK [1][-]{section.3.1}{Planning}{chapter.3}% 23
 \BOOKMARK [1][-]{section.3.2}{Designing}{chapter.3}% 24
 \BOOKMARK [1][-]{section.3.3}{Creating}{chapter.3}% 25
-\BOOKMARK [0][-]{chapter.4}{System Analysis}{}% 26
-\BOOKMARK [1][-]{section.4.1}{Feasibility and System Limitations}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.2}{User Experience}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.3}{System Requirements}{chapter.4}% 29
-\BOOKMARK [2][-]{subsection.4.3.1}{Hosting Requirements}{section.4.3}% 30
-\BOOKMARK [2][-]{subsection.4.3.2}{System Functionality}{section.4.3}% 31
-\BOOKMARK [0][-]{chapter.5}{System Design}{}% 32
-\BOOKMARK [1][-]{section.5.1}{Prototype}{chapter.5}% 33
-\BOOKMARK [1][-]{section.5.2}{User Interface Design and Usability}{chapter.5}% 34
-\BOOKMARK [2][-]{subsection.5.2.1}{Home Page}{section.5.2}% 35
-\BOOKMARK [2][-]{subsection.5.2.2}{Account Page}{section.5.2}% 36
-\BOOKMARK [1][-]{section.5.3}{Difficulties faced}{chapter.5}% 37
-\BOOKMARK [2][-]{subsection.5.3.1}{Pre-development}{section.5.3}% 38
-\BOOKMARK [2][-]{subsection.5.3.2}{Development}{section.5.3}% 39
-\BOOKMARK [0][-]{chapter.6}{Statement of Ethics}{}% 40
-\BOOKMARK [1][-]{section.6.1}{Leagal stantpoint}{chapter.6}% 41
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 42
+\BOOKMARK [1][-]{section.3.4}{Complexity}{chapter.3}% 26
+\BOOKMARK [0][-]{chapter.4}{System Analysis}{}% 27
+\BOOKMARK [1][-]{section.4.1}{Feasibility and System Limitations}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.2}{User Experience}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.3}{System Requirements}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.3.1}{Hosting Requirements}{section.4.3}% 31
+\BOOKMARK [2][-]{subsection.4.3.2}{System Functionality}{section.4.3}% 32
+\BOOKMARK [0][-]{chapter.5}{System Design}{}% 33
+\BOOKMARK [1][-]{section.5.1}{Prototype}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.2}{User Interface Design and Usability}{chapter.5}% 35
+\BOOKMARK [2][-]{subsection.5.2.1}{Home Page}{section.5.2}% 36
+\BOOKMARK [2][-]{subsection.5.2.2}{Account Page}{section.5.2}% 37
+\BOOKMARK [1][-]{section.5.3}{Difficulties faced}{chapter.5}% 38
+\BOOKMARK [2][-]{subsection.5.3.1}{Pre-development}{section.5.3}% 39
+\BOOKMARK [2][-]{subsection.5.3.2}{Development}{section.5.3}% 40
+\BOOKMARK [0][-]{chapter.6}{Testing}{}% 41
+\BOOKMARK [0][-]{chapter.7}{Statement of Ethics}{}% 42
+\BOOKMARK [1][-]{section.7.1}{Leagal standpoint}{chapter.7}% 43
+\BOOKMARK [1][-]{section.7.2}{Ethical standpoint}{chapter.7}% 44
+\BOOKMARK [2][-]{subsection.7.2.1}{ACM-IEEE}{section.7.2}% 45
+\BOOKMARK [2][-]{subsection.7.2.2}{The Computer Misuse Act 1990}{section.7.2}% 46
+\BOOKMARK [2][-]{subsection.7.2.3}{Copyright}{section.7.2}% 47
+\BOOKMARK [2][-]{subsection.7.2.4}{Conclusion}{section.7.2}% 48
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 49
+\BOOKMARK [1][-]{section.8.1}{Overview}{chapter.8}% 50
+\BOOKMARK [1][-]{section.8.2}{Potential Improvements}{chapter.8}% 51
+\BOOKMARK [1][-]{section.8.3}{Personal Gains}{chapter.8}% 52

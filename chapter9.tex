@@ -41,29 +41,43 @@ Assigning each post with a score based on the parameters aforementioned happens 
 \lstset{frame=lines}
 \begin{lstlisting}
 # Checks if the user is authenticated.
-if user.is_authenticated:
-for post in queryset:
+if user.is_authenticated: #1
+  pen_post = [] #1
 
-  # A list of common interests.
-  common_result = []
-  # A list of non-common interests.
-  non_common_result = []
-  # Set's the score to the time a post is updated.
-  post.post_score = post.date_updated.timestamp()
+  for penalty in penalty_list: #n
+    penalized_posts = BlogPost.objects.filter(
+    Q(title__contains=penalty)|
+    Q(body__icontains=penalty)) #n
+    for q in queryset: #n
+      if q in penalized_posts:
+        q.bad_words = q.bad_words + 1
 
-  for element in post.interests:
-    # Updates based on common interests.
-    if element in user.interests:
-      common_result.append(element)
-      post.post_score = post.post_score * (len(common_result) * 5)
+  for q in queryset:#n
+    # A list of common interests.
+    common_result = []#1
+    # A list of non-common interests.
+    non_common_result = []#1
+    # Set's the score to the time a post is updated.
+    q.post_score = q.date_updated.timestamp() #1
 
-    # Updates based on non-common interests.
-    if element not in user.interests:
-      non_common_result.append(element)
-      post.post_score = post.post_score / (len(non_common_result) * 2)
+    for element in q.interests: #n
+      # Updates based on common interests.
+      if element in user.interests: #1
+        common_result.append(element) #1
+        q.post_score = q.post_score * (len(common_result) * 5) #1
 
-    # Updates based on the penalty words used.
-    if post.title in penalty_list or post.body in profanity_list:
-      for penalty in penalty_list:
-        post.post_score = post.post_score / (len(penalty_list) * 5)
+      # Updates based on non-common interests.
+      if element not in user.interests: #1
+        non_common_result.append(element) #1
+        q.post_score = q.post_score / (len(non_common_result) * 2) #1
+
+    # Updates based on penalty words.
+    for post in pen_post: #n
+      q.post_score = q.post_score / (q.bad_words * 5)#1
 \end{lstlisting}
+
+\section{Complexity}
+
+The time complexity of this algorithm will be calculated with the popular big O notation. Big O notation is used in Computer Science to describe the performance or complexity of an algorithm. Big O specifically describes the worst-case scenario, and can be used to describe the execution time required or the space used (e.g. in memory or on disk) by an algorithm \cite{bell_2009_a}.
+
+In the code listed in the above section, I have included the running complexity after each line. That way we can calculate that the worst-case complexity will never be more than $O(n^2)$.

@@ -89,8 +89,6 @@ def edit_blog_view(request, slug):
 	return render(request, 'blog/edit_blog.html', context)
 
 def get_blog_queryset(user, query=None):
-	base = 1
-
 	queryset = []
 	queries = query.split(" ")
 	for q in queries:
@@ -106,32 +104,41 @@ def get_blog_queryset(user, query=None):
 
 	# Gets the list of penalized words.
 	penalty_list = open('penalty_list.txt').read().splitlines()
-
 	# Checks if the user is authenticated.
-	if user.is_authenticated:
-		for q in queryset:
 
+	if user.is_authenticated: #1
+		pen_post = [] #1
+
+		for penalty in penalty_list: #n
+			penalized_posts = BlogPost.objects.filter(
+			Q(title__contains=penalty)|
+			Q(body__icontains=penalty)) #n
+			for q in queryset: #n
+				if q in penalized_posts:
+					q.bad_words = q.bad_words + 1
+
+		for q in queryset:#n
+			print(q.title)
 			# A list of common interests.
-			common_result = []
+			common_result = []#1
 			# A list of non-common interests.
-			non_common_result = []
+			non_common_result = []#1
 			# Set's the score to the time a post is updated.
-			q.post_score = q.date_updated.timestamp()
+			q.post_score = q.date_updated.timestamp() #1
 
-			for element in q.interests:
+			for element in q.interests: #n
 				# Updates based on common interests.
-				if element in user.interests:
-					common_result.append(element)
-					q.post_score = q.post_score * (len(common_result) * 5)
+				if element in user.interests: #1
+					common_result.append(element) #1
+					q.post_score = q.post_score * (len(common_result) * 5) #1
 
 				# Updates based on non-common interests.
-				if element not in user.interests:
-					non_common_result.append(element)
-					q.post_score = q.post_score / (len(non_common_result) * 2)
+				if element not in user.interests: #1
+					non_common_result.append(element) #1
+					q.post_score = q.post_score / (len(non_common_result) * 2) #1
 
-				# Updates based on penalty words.
-				if q.title in penalty_list or q.body in penalty_list:
-					for penalty in penalty_list:
-						q.post_score = q.post_score / (len(penalty_list) * 5)
-
+			# Updates based on penalty words.
+			if q.bad_words > 0: #n
+				q.post_score = q.post_score / (q.bad_words *  5)#1
+			print(q.post_score)
 	return list(set(queryset))

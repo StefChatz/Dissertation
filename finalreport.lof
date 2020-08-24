@@ -1,19 +1,24 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Reddit Ranking Algorithm in mathematical notation}}{17}{figure.2.1}% 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Hacker News Algorithm in mathematical notation}}{18}{figure.2.2}% 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Edwin B. Wilson confidence sort in mathematical notation}}{19}{figure.2.3}% 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Reddit Ranking Algorithm in mathematical notation}}{15}{figure.2.1}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Hacker News Algorithm in mathematical notation}}{16}{figure.2.2}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Edwin B. Wilson confidence sort in mathematical notation}}{17}{figure.2.3}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The stages of the final ranking algorithm.}}{22}{figure.3.1}% 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The stages of the final ranking algorithm.}}{20}{figure.3.1}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Bootstrap colours}}{26}{figure.4.1}% 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces An example post}}{26}{figure.4.2}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Bootstrap colours}}{24}{figure.4.1}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces An example post}}{24}{figure.4.2}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Django app file layout}}{29}{figure.5.1}% 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Account view methods}}{29}{figure.5.2}% 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Home page from mobile device}}{30}{figure.5.3}% 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Home page from desktop}}{30}{figure.5.4}% 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Account page pt. 1}}{31}{figure.5.5}% 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Account page pt. 2}}{31}{figure.5.6}% 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Django app file layout}}{27}{figure.5.1}% 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Account view methods}}{27}{figure.5.2}% 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Home page from mobile device}}{28}{figure.5.3}% 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Home page from desktop}}{28}{figure.5.4}% 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Account page pt. 1}}{29}{figure.5.5}% 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Account page pt. 2}}{29}{figure.5.6}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Demonstration of scoring posts by time}}{31}{figure.6.1}% 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Demonstration of scoring posts by common interests}}{31}{figure.6.2}% 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Demonstration of scoring posts by non-common interests}}{32}{figure.6.3}% 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Demonstration of scoring posts by the use of penalised words}}{32}{figure.6.4}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }

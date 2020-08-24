@@ -32,6 +32,7 @@ class BlogPost(models.Model):
 	slug 					= models.SlugField(blank=True, unique=True)
 	interests				= MultiSelectField(choices = CHOICES, default = "news")
 	post_score				= models.IntegerField(default = 0)
+	bad_words				= models.IntegerField(default = 0)
 
 	# interest				= models.CharField(max_length=50, null=False, blank=False)
 	# category_interest = models.CharField(

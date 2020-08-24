@@ -19,6 +19,7 @@ def home_screen_view(request, *args, **kwargs):
 
 	if request.user.is_authenticated:
 		blog_posts = sorted(get_blog_queryset(request.user, query), key=attrgetter('post_score'), reverse=True)
+		print(blog_posts.title)
 	else:
 				blog_posts = sorted(get_blog_queryset(request.user, query), key=attrgetter('date_updated'), reverse=True)
 	# Pagination

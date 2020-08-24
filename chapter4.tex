@@ -3,7 +3,7 @@
 \chapter {System Design}
 
 \section{Prototype}
-The prototype mostly consisted of the user being able to create an account, and create posts that simply included a text. As stated before, since I decided to use Django to develop this app, I had to work with apps. This means that every major aspect of the project such as blog posts and account of is implemented as an app.
+The prototype mostly consisted of the user being able to create an account, and create posts that simply included a text. As stated before, since I decided to use Django to develop this app, I had to work with apps. This means that every major aspect of the project such as blog posts and account of is implemented as an app. During this process, the agile design methodology played a big role in the constant reimplemntations. In order to design and implement the different parts of the protoype such as user accounts, the agile methodology made it easier to concentrate on one thing at a time through heaps.
 
 \begin{figure}[htbp]
 \begin{minipage}[t]{0.45\linewidth}
@@ -13,7 +13,7 @@ The prototype mostly consisted of the user being able to create an account, and 
 \end{minipage}%
     \hfill%
 \begin{minipage}[t]{0.45\linewidth}
-    \includegraphics[width=\linewidth]{Figures/post_example}
+    \includegraphics[width=\linewidth]{Figures/account_view}
     \caption{Account view methods}
     \label{account_view}
 \end{minipage}
@@ -68,4 +68,4 @@ This part will mainly touch upon difficulties faced during the development proce
 During the planning process, the choice to use Django was certainly not one without issues. For example, there isn't much information online to create a form that handles the information the way I needed them to and how to render them effectively. These issues mostly have to be learned through trial and error with the Django documentation being the sole guide. This resulted in spending a lot of time to learn all the Django components before the implementation could begin. Still, since many big organisations such as Reddit run their website entirely on the Django framework, it made me confident that the learning curve was worth it.
 
 \subsection{Development}
-During the development process, I did come across a few issues, mostly regarding keeping track of versions from different dependencies and programs which sometimes resulted in restarting the project from the start. Moreover, I had to re-implement different variants of the algorithm and test them. This, however, became more difficult once I presented to the people that tested the application with two different algorithms. During the designing process, they provided me with information that I had to take into consideration and improve the final algorithm. Yet, now that I can reflect upon this issue, it is more apparent that the reimplementation process of reimplementing different parts of the algorithm, provided a valuable learning opportunity which led to me writing more efficient code overall.
+During the development process, I did come across a few issues, mostly regarding keeping track of versions from different dependencies and programs which sometimes resulted in restarting the project. During the designing process, there were parts of the project that needed re-implementation for a variety of reasons, like UI, and sorting issues. Reflecting back to these issues, it is more apparent that the reimplementation process of different parts of the algorithm, provided a valuable learning opportunity which led to me writing more efficient code overall.

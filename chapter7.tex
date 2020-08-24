@@ -1,10 +1,10 @@
 % $Id: chapter7.tex 1790 2010-09-28 16:46:40Z jabriffa $
 
 \chapter {Statement of Ethics}
-During the creation of this project, all the legal, ethical and social aspects have been considered and analyzed below. Since one objective of this project is to eliminate the existence of administrators and moderators, the user's information itself should not ever be intervened by anyone.
+During the creation of this project, all the legal, ethical and social aspects have been considered and analyzed below. It is worth saying that this project is completely legal and created fully in "good faith".
 
-\section{Leagal stantpoint}
-In the process of creating this project I was extra careful that the information and software I used were under open-source or similar licenses. This is important since many relevant to this project technologies are licensed so that they can not be used in any shape or form. Furthermore, most of the software I used had technologies that handled user information securely by hashing or other ways. Specifically this what Django's authentication system consists of:
+\section{Leagal standpoint}
+In the process of creating this project I was extra careful that the information and software I used were under open-source or similar licenses. This is important since many technologies are licensed so that they can not be used in any shape or form. Furthermore, most of the software I used had technologies that handled user information securely by hashing or other ways. Specifically this what Django's authentication system consists of:
 
 \begin{enumerate}
   \item Users
@@ -14,3 +14,38 @@ In the process of creating this project I was extra careful that the information
   \item Forms and view tools for logging in users, or restricting content
   \item A pluggable backend system
 \end{enumerate}
+
+\section{Ethical standpoint}
+The ethical issues that might arise in Web applications nowadays is not clearly yet defined. The goal of this project is entirely with good intent and is in the public interest. In order for a website to be ethical, the user information should be private, and the user should always know how their information is collected and if so, how is it used \cite{harris_2009_ethical}.
+
+\subsection{ACM-IEEE}
+
+This project complies with the four ethical design guidelines as suggested by the ACM-IEEE
+Joint Software Engineering Code of Ethics (JSECOE), which are:
+
+\begin{enumerate}
+  \item Information should not be hidden
+  \item Information should not be used or transferred without proper consent
+  \item Consent should be properly obtained
+  \item Privacy should be maintained
+\end{enumerate}
+
+First and foremost, user information is at all times visible and accessible by them, and only them. Secondly, user information is never transfered. Thirdly, when the user selects a username, email, password or interests, their consent is always asked, whether that would be by the register button or by saving changes in their account profile once they have an account. In fact, when a user creates a post they are warned that their email will be visible underneath the post, so they can decide whether they would like to proceed or not. Where this project to be designed from a more scalable perspective and comercial use, perhaps there would be other issues to consider such as gathering user tendencies which can be used for advertising purposes.
+
+\subsection{The Computer Misuse Act 1990}
+The Parliament of the United Kingdom passed three new offences which relate to Computer users. Performing any of the act listed below is considered a crime.
+
+\begin{enumerate}
+  \item Accessing computer material without permission, eg looking at someone else's files.
+  \item accessing computer material without permission with intent to commit further criminal offences, eg hacking into the bank's computer and wanting to increase the amount in your account.
+  \item Altering computer data without permission, eg writing a virus to destroy someone else's data, or actually changing the money in an account.
+\end{enumerate}
+
+This project also complies with the Compouter Misuse Act since all exploits except hacking in to the host server have been eliminated. The reason this exploit remains is because no matter how secure the software itself is, if this project was hosted on a non-secure server, Some of the website information could pottentially be obtained by un-authorized access.
+
+\subsection{Copyright}
+This website is copyright free. What the user's decide to share is simply their choice. Moreover, the website does not condone any kind of content copying and is in no way associated with file sharing schemes.
+
+\subsection{Conclusion}
+
+Lastly it is worth mentioning that since the website does not provide many complicated aspects, following an ethical procedure when developing such a website is not difficult. However, in websites with multiple functionalities, actions and a plethora of users, there are a lot of ethical issues that arise and have to be dealt with in "good interest". Even when ethical issues arise, it is usually due to the lack of attention from the developer's side.
